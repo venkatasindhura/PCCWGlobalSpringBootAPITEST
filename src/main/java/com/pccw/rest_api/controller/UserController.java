@@ -21,7 +21,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api")
 public class UserController {
 	public static final Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
@@ -76,7 +76,7 @@ public class UserController {
     
         System.out.printf("********* message to ******** %s", recipientAddress);
         msg.setSubject("Registeration success!");
-        msg.setText("Welcome \n Registration done successfully");  
+        msg.setText("Welcome \n You have done registration successfully");  
         javaMailSender.send(msg);    
         return userRepository.save(user);  
     }

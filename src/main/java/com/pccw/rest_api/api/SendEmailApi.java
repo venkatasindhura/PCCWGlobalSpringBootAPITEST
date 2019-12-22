@@ -23,8 +23,8 @@ public class SendEmailApi{
         System.out.printf("#############%s", recipientAddress);
         SimpleMailMessage msg = new SimpleMailMessage();
         msg.setTo(recipientAddress);
-        msg.setSubject("Testing from Spring Boot");
-        msg.setText("Hello World \n Spring Boot Email");
+        msg.setSubject("Confirmation Mail");
+        msg.setText("\n You have done registration successfully");
         javaMailSender.send(msg);
     }
     public void sendEmailWithAttachment(String email) throws MessagingException, IOException {
@@ -40,7 +40,7 @@ public class SendEmailApi{
         // default = text/plain
         //helper.setText("Check attachment for image!");
         // true = text/html
-        helper.setText("<h1>Registeration Success!</h1>", true);
+        helper.setText("<h1> You have done registration successfully!</h1>", true);
 		// hard coded a file path
         //FileSystemResource file = new FileSystemResource(new File("path/android.png"));
         // helper.addAttachment("my_photo.png", new ClassPathResource("android.png"));
