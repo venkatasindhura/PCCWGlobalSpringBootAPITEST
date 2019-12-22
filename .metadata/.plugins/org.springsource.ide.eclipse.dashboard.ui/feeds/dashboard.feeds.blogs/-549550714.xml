@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Spring</title>
+  <link rel="alternate" href="https://spring.io/blog" />
+  <link rel="self" href="https://spring.io/blog.atom" />
+  <id>http://spring.io/blog.atom</id>
+  <icon>https://spring.io/favicon.ico</icon>
+  <updated>2019-12-18T17:32:15Z</updated>
+  <entry>
+    <title>Spring for Apache Kafka 2.4 Release Candidate</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/18/spring-for-apache-kafka-2-4-release-candidate" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Gary Russell</name>
+    </author>
+    <id>tag:spring.io,2019-12-13:3911</id>
+    <updated>2019-12-18T17:32:15Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Hot on the heels of the recent Apache Kafka 2.4.0 release, I am pleased to announce the release candidate for Spring for Apache Kafka 2.4 - 2.4.0.RC1 - is available in the &lt;a href="https://repo.spring.io/milestone"&gt;Spring milestone repository&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This version is essentially functionally equivalent to 2.3.x, but is compiled against the 2.4.0 &lt;code&gt;kafka-clients&lt;/code&gt; and supports the new incremental rebalancing protocol.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The 2.4.0 kafka clients are not binary compatible with Spring for Apache Kafka 2.3 so if you wish to use the 2.4.0 clients, you must upgrade to this version. See the appendix in the reference manual for how to override the jar versions, especially if you are using Spring Boot and/or the test embedded kafka broker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We expect to release the GA shortly.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;At the time of writing, it is expected that the next Spring Boot version (2.3) will pull in 2.4.x of this project via its dependency management.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-kafka/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-kafka"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-kafka/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-kafka/docs/2.4.0..RC1/reference/html/"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-kafka"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-kafka"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - December 18th, 2019</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/18/this-week-in-spring-december-18th-2019" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-12-18:3912</id>
+    <updated>2019-12-18T07:54:10Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! This week I am in beautiful Tokyo, Japan, where I just spoke at the always lovely annual Spring Fest event. I loved the show and I hope that they got something out of my performance. &lt;/p&gt;
+&lt;p&gt;Last week was tough. Possibly the toughest week of my life. I didn&amp;rsquo;t publish an episode of &lt;a href="http://twitter.com/Bootiful_Podcast"&gt;&lt;em&gt;A Bootiful Podcast&lt;/em&gt;&lt;/a&gt;, as such. You won&amp;rsquo;t see that episode reflected on the blog because it was my heartbroken dedication to my father, who passed away last week at the age of 81. No interview in that brief, less-than-20 minutes episode. &lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m feeling a little better and was glad to come back to the work of writing this blog and find that there was an absolute ton of good stuff to read and consume. I hope you get something out of it, too. &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/13/flight-of-the-flux-3-hopping-threads-and-schedulers"&gt;Flight of the Flux 3 - Hopping Threads and Schedulers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/12/spring-boot-for-apache-geode-pivotal-gemfire-1-1-4-release-1-2-2-release-available"&gt;Spring Boot for Apache Geode &amp;amp; Pivotal GemFire 1.1.4.RELEASE &amp;amp; 1.2.2.RELEASE Available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/12/spring-session-for-apache-geode-pivotal-gemfire-2-1-7-release-and-2-2-1-release-available"&gt;Spring Session for Apache Geode &amp;amp; Pivotal GemFire 2.1.7.RELEASE and 2.2.1.RELEASE Available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/10/spring-boot-2-1-x-eol-november-1st-2020"&gt;Spring Boot 2.1.x EOL November 1st 2020&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Learn how LAIKA, a premier stop-motion animation studio in Portland, OR, &lt;a href="https://www.rabbitmq.com/blog/2019/12/16/laika-gets-creative-with-rabbitmq-as-the-animation-companys-it-nervous-system/"&gt;uses RabbitMQ&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://docs.google.com/forms/d/e/1FAIpQLSdh-FWTC1eWKym7z9dKkQZruQz8QePaQ94sBeL1EGHEbiOj7w/viewform"&gt;Please take this survey to help us know what you&amp;rsquo;d like to change for Spring Cloud Data Flow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Fellow Java Champion and Jetbrains&amp;rsquo; Trisha Gee concludes her epic series looking at Reactive Spring just in time for Christmas with this &lt;a href="https://blog.jetbrains.com/idea/2019/12/tutorial-reactive-spring-boot-spring-profiles-to-switch-clients/"&gt;latest installment introducing RSocket&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Not strictly speaking related to Spring, but generally good advice for anyone interested in software architectures: Simon Brown&amp;rsquo;s introduction to &lt;a href="http://www.codingthearchitecture.com/2016/04/25/layers_hexagons_features_and_components.html"&gt;Layers, hexagons, features and components&lt;/a&gt; is a worthy read.&lt;/li&gt;
+  &lt;li&gt;DZone has a nice post on &lt;a href="https://dzone.com/articles/an-implementation-of-spring-boot-with-spring-data"&gt;implementing Spring Boot with Spring Data JPA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Thanks everyone - &lt;a href="https://twitter.com/SpringData/status/1206513892077244417"&gt; the @SpringData handle has crossed 30,000 followers!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Our friends at Alibaba have open-sourced their Alibaba RSocket Broker &lt;a href="https://github.com/alibaba/alibaba-rsocket-broker"&gt;supporting meshes, streaming &amp;amp; IoT, among other things&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Greg Turnquist published a nice video, &lt;a href="https://m.youtube.com/watch?v=b66rXMgk8Iw&amp;feature=youtu.be"&gt;&lt;em&gt;Five Reasons to Use Spring Boot&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.brighttalk.com/webcast/14893/378835"&gt;Register now to make this webinar (tomorrow, Wednesday the 19th, 2019), on Spring Cloud Kubernetes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=_-aGFW4huvg&amp;feature=youtu.be"&gt;I loved this second introduction to Spring Data Neo4j&amp;rsquo;s new Reactive implementation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This SpringOne Platform 2019 talk, &lt;a href="https://www.youtube.com/watch?v=7Faly8jORIw"&gt;&lt;em&gt;RabbitMQ &amp;amp; Kafka&lt;/em&gt;&lt;/a&gt; is now online and worth a watch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Flight of the Flux 3 - Hopping Threads and Schedulers</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/13/flight-of-the-flux-3-hopping-threads-and-schedulers" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Simon Baslé</name>
+    </author>
+    <id>tag:spring.io,2019-12-13:3910</id>
+    <updated>2019-12-13T16:00:00Z</updated>
+    <content type="html">&lt;p&gt;This blog post is the third in a series of posts that aim at providing a deeper look into &lt;a href="https://github.com/reactor/reactor-core"&gt;Reactor&lt;/a&gt;’s more advanced concepts and inner workings.&lt;/p&gt;
+&lt;p&gt;In this post, we explore the threading model, how some (most) operators are concurrent agnostic, the &lt;code&gt;Scheduler&lt;/code&gt; abstraction and how to hop from one thread to another mid-sequence with operators like &lt;code&gt;publishOn&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This series is derived from the &lt;code&gt;Flight of the Flux&lt;/code&gt; talk, which content I found to be more adapted to a blog post format.&lt;/p&gt;
+&lt;p&gt;The table below will be updated with links when the other posts are published, but here is the planned content:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/03/06/flight-of-the-flux-1-assembly-vs-subscription"&gt;Assembly vs Subscription&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/04/16/flight-of-the-flux-2-debugging-caveats"&gt;Debugging caveats&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Hopping Threads and Schedulers (this post)&lt;/li&gt;
+  &lt;li&gt;Inner workings: work stealing&lt;/li&gt;
+  &lt;li&gt;Inner workings: operator fusion&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you’re missing an introduction to &lt;em&gt;Reactive Streams&lt;/em&gt; and the basic concepts of Reactor, head out to the site’s &lt;a href="https://projectreactor.io/learn"&gt;learning section&lt;/a&gt; and the &lt;a href="https://projectreactor.io/docs/core/release/reference"&gt;reference guide&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Without further ado, let’s jump in:&lt;/p&gt;&lt;h2&gt;&lt;a href="#the-threading-model" class="anchor" name="the-threading-model"&gt;&lt;/a&gt;The Threading Model&lt;/h2&gt;
+&lt;p&gt;Reactor operators generally are &lt;em&gt;concurrent agnostic&lt;/em&gt;: they don&amp;rsquo;t impose a particular threading model and just run on the &lt;code&gt;Thread&lt;/code&gt; on which their &lt;code&gt;onNext&lt;/code&gt; method was invoked.&lt;/p&gt;
+&lt;p&gt;As we saw in the first post of this series, the &lt;code&gt;Thread&lt;/code&gt; that executes the subscription call also has an influence: the &lt;code&gt;subscribe&lt;/code&gt; calls are chained until a data-producing &lt;code&gt;Publisher&lt;/code&gt; is reached (the leftmost part of the chain of operators), then this &lt;code&gt;Publisher&lt;/code&gt; offers a &lt;code&gt;Subscription&lt;/code&gt; through &lt;code&gt;onSubscribe&lt;/code&gt;, in turn passed down the chain, requested, etc&amp;hellip; By default, again, this data production process starts on the &lt;code&gt;Thread&lt;/code&gt; that initiated the subscription.&lt;/p&gt;
+&lt;p&gt;There is a general exception to this: operators that deal with a notion of &lt;strong&gt;time&lt;/strong&gt;. Any such operator will default to running timers/delays/etc&amp;hellip; on the &lt;code&gt;Schedulers.parallel()&lt;/code&gt; scheduler.&lt;/p&gt;
+&lt;p&gt;A few other exceptions exist that also run on this &lt;code&gt;parallel()&lt;/code&gt; &lt;code&gt;Scheduler&lt;/code&gt;. They can be recognized by having at least one overload that takes a &lt;code&gt;Scheduler&lt;/code&gt; parameter.&lt;/p&gt;
+&lt;p&gt;But what is a &lt;code&gt;Scheduler&lt;/code&gt; and why do we need it?&lt;/p&gt;&lt;h2&gt;&lt;a href="#the-code-scheduler-code-abstraction" class="anchor" name="the-code-scheduler-code-abstraction"&gt;&lt;/a&gt;The &lt;code&gt;Scheduler&lt;/code&gt; abstraction&lt;/h2&gt;
+&lt;p&gt;In Reactor, a &lt;code&gt;Scheduler&lt;/code&gt; is an abstraction that gives the user control about threading. A &lt;code&gt;Scheduler&lt;/code&gt; can spawn &lt;code&gt;Worker&lt;/code&gt; which are conceptually &lt;code&gt;Threads&lt;/code&gt;, but are not necessarily backed by a &lt;code&gt;Thread&lt;/code&gt; (we&amp;rsquo;ll see an example of that later). A &lt;code&gt;Scheduler&lt;/code&gt; also includes the notion of a &lt;strong&gt;clock&lt;/strong&gt;, whereas the &lt;code&gt;Worker&lt;/code&gt; is purely about scheduling tasks.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;interface Scheduler extends Disposable {&#xD;
+    &#xD;
+  Disposable schedule(Runnable task);&#xD;
+  Disposable schedule(Runnable task, long initialDelay, TimeUnit delayUnit);&#xD;
+  Disposable schedulePeriodically(Runnable task, long initialDelay, long perido, TimeUnit unit);&#xD;
+  &#xD;
+  long now(TimeUnit unit);&#xD;
+  &#xD;
+  Worker createWorker();&#xD;
+  &#xD;
+  interface Worker extends Disposable {&#xD;
+    Disposable schedule(Runnable task);&#xD;
+    Disposable schedule(Runnable task, long initialDelay, TimeUnit delayUnit);&#xD;
+    Disposable schedulePeriodically(Runnable task, long initialDelay, long perido, TimeUnit unit);&#xD;
+  }&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Reactor comes with several default &lt;code&gt;Scheduler&lt;/code&gt; implementations, each with its own specificity about how it manages &lt;code&gt;Workers&lt;/code&gt;. They can be instantiated via the &lt;code&gt;Schedulers&lt;/code&gt; factory methods. Here are rule of thumbs for their typical usage:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;Schedulers.immediate()&lt;/code&gt; can be used as a &lt;em&gt;null object&lt;/em&gt; for when an API requires a &lt;code&gt;Scheduler&lt;/code&gt; but you don&amp;rsquo;t want to change threads&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Schedulers.single()&lt;/code&gt; is for one-off tasks that can be run on a unique &lt;code&gt;ExecutorService&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Schedulers.parallel()&lt;/code&gt; is good for CPU-intensive but short-lived tasks. It can execute &lt;code&gt;N&lt;/code&gt; such tasks in parallel (by default &lt;code&gt;N == number of CPUs&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;Schedulers.elastic()&lt;/code&gt; and &lt;code&gt;Schedulers.boundedElastic()&lt;/code&gt; are good for more long-lived tasks (eg. blocking IO tasks). The &lt;code&gt;elastic&lt;/code&gt; one spawns threads on-demand without a limit while the recently introduced &lt;code&gt;boundedElastic&lt;/code&gt; does the same with a ceiling on the number of created threads.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each flavor of &lt;code&gt;Scheduler&lt;/code&gt; has a default global instance returned by the above methods, but one can create new instances using the &lt;code&gt;Schedulers.new***&lt;/code&gt; factory methods (eg. &lt;code&gt;Schedulers.newParallel(&amp;quot;myParallel&amp;quot;, 10))&lt;/code&gt; to create a custom parallel &lt;code&gt;Scheduler&lt;/code&gt; where &lt;code&gt;N&lt;/code&gt; = &lt;code&gt;10&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;parallel&lt;/code&gt; flavor is backed by &lt;code&gt;N&lt;/code&gt; workers each based on a &lt;code&gt;ScheduledExecutorService&lt;/code&gt;. If you submit &lt;code&gt;N&lt;/code&gt; long lived tasks to it, no more work can be executed, hence the affinity for &lt;em&gt;short-lived&lt;/em&gt; tasks.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;elastic&lt;/code&gt; flavor is also backed by workers based on &lt;code&gt;ScheduledExecutorService&lt;/code&gt;, except it creates these workers on demand and pools them. A &lt;code&gt;Worker&lt;/code&gt; that is no longer in used is returned to the pool on &lt;code&gt;dispose()&lt;/code&gt; and will be kept here for the configured TTL duration, so new incoming tasks may reuse idle workers. However, it keeps on creating new workers if no idle &lt;code&gt;Worker&lt;/code&gt; is available.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;boundedElastic&lt;/code&gt; flavor is very similar in concept to the &lt;code&gt;elastic&lt;/code&gt; one except it places an upper bound to the number of &lt;code&gt;ScheduledExecutorService&lt;/code&gt;-backed &lt;code&gt;Worker&lt;/code&gt; it creates. Past this point, its &lt;code&gt;createWorker()&lt;/code&gt; method returns a facade &lt;code&gt;Worker&lt;/code&gt; that will enqueue tasks instead of submitting them immediately. As soon as a concrete &lt;code&gt;Worker&lt;/code&gt; becomes available, it is swapped with the facade and starts actually submitting tasks (making it act like you only just submitted the task, including delayed ones). Additionally, one can put a cap on the total number of deferred tasks which can be enqueued by all the facade workers of the &lt;code&gt;Scheduler&lt;/code&gt; instance.&lt;/p&gt;&lt;h3&gt;&lt;a href="#are-schedulers-always-backed-by-an-executorservice" class="anchor" name="are-schedulers-always-backed-by-an-executorservice"&gt;&lt;/a&gt;Are Schedulers Always Backed by an ExecutorService?&lt;/h3&gt;
+&lt;p&gt;As we said above, no. We already saw an example actually: the &lt;code&gt;immediate() Scheduler&lt;/code&gt;. This one doesn&amp;rsquo;t modify which &lt;code&gt;Thread&lt;/code&gt; the code is running on.&lt;/p&gt;
+&lt;p&gt;But there is a more useful example in the &lt;code&gt;reactor-test&lt;/code&gt; library: the &lt;code&gt;VirtualTimeScheduler&lt;/code&gt;. This &lt;code&gt;Scheduler&lt;/code&gt; executes on the current &lt;code&gt;Thread&lt;/code&gt;, but stamps all tasks submitted to it with the time at which they are supposed to be run.&lt;/p&gt;
+&lt;p&gt;It then manages a &lt;strong&gt;virtual clock&lt;/strong&gt; (thanks to the fact that &lt;code&gt;Scheduler&lt;/code&gt; also has the responsabilities of a clock) which can be manually advanced. When doing so, tasks that were queued to execute before or at the new virtual timestamp will be executed.&lt;/p&gt;
+&lt;p&gt;This is very useful in test scenarios where you have a &lt;code&gt;Flux&lt;/code&gt; or &lt;code&gt;Mono&lt;/code&gt; with long intervals/delays and you want to test the logic rather than the timing. For instance something like a &lt;code&gt;Mono.delay(Duration.ofHours(4))&lt;/code&gt; can be run in under &lt;code&gt;100ms&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;One could also imagine implementing a &lt;code&gt;Scheduler&lt;/code&gt; around a Actor system, the &lt;code&gt;ForkJoinPool&lt;/code&gt;, upcoming Loom fibers, etc&amp;hellip;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;About the &lt;em&gt;main&lt;/em&gt; &lt;code&gt;Thread&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;Often, people ask about switching back and forth between a &lt;code&gt;Scheduler&lt;/code&gt;&amp;rsquo;s thread and the &lt;em&gt;main&lt;/em&gt; thread. Going from the main to a scheduler is obviously possible, &lt;strong&gt;but going from an arbitrary thread to the &lt;em&gt;main&lt;/em&gt; thread is not possible&lt;/strong&gt;. That is plainly a Java limitation, as there is no way to submit tasks to the &lt;em&gt;main&lt;/em&gt; thread (e.g. there&amp;rsquo;s no MainThreadExecutorService).&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h2&gt;&lt;a href="#applying-schedulers-to-operators" class="anchor" name="applying-schedulers-to-operators"&gt;&lt;/a&gt;Applying Schedulers to Operators&lt;/h2&gt;
+&lt;p&gt;No that we&amp;rsquo;re familiar with the building blocks of threading in Reactor, let&amp;rsquo;s see how this translates in the world of operators.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve already established that most operator continue their work on the &lt;code&gt;Thread&lt;/code&gt; from which they were signalled, except for time-based operators (like &lt;code&gt;Mono.delay&lt;/code&gt;, &lt;code&gt;bufferTimeout()&lt;/code&gt;, etc&amp;hellip;).&lt;/p&gt;
+&lt;p&gt;The philosophy of Reactor is to give you tools to do the right thing, by way of composing operators. Threading is not an exception: meet &lt;code&gt;subscribeOn&lt;/code&gt; and &lt;code&gt;publishOn&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;These two operators simply take a &lt;code&gt;Scheduler&lt;/code&gt; and will switch execution on one of that scheduler&amp;rsquo;s &lt;code&gt;Worker&lt;/code&gt;. There is of course a major difference between the two :)&lt;/p&gt;&lt;h3&gt;&lt;a href="#the-code-publishon-scheduler-s-code-operator" class="anchor" name="the-code-publishon-scheduler-s-code-operator"&gt;&lt;/a&gt;The &lt;code&gt;publishOn(Scheduler s)&lt;/code&gt; operator&lt;/h3&gt;
+&lt;p&gt;This is the basic operator you need when you want to hop threads. Incoming signals from its source are &lt;em&gt;published&lt;/em&gt; on the given &lt;code&gt;Scheduler&lt;/code&gt;, effectively switching threads to one of that scheduler&amp;rsquo;s workers.&lt;/p&gt;
+&lt;p&gt;This is valid for the &lt;code&gt;onNext&lt;/code&gt;, &lt;code&gt;onComplete&lt;/code&gt; and &lt;code&gt;onError&lt;/code&gt; signals. That is, signals that flow from an upstream source to a downstream subscriber.&lt;/p&gt;
+&lt;p&gt;So in essence, every processing step that appears below this operator will execute on the new &lt;code&gt;Scheduler&lt;/code&gt; &lt;code&gt;s&lt;/code&gt;, until another operator switches again (eg. another &lt;code&gt;publishOn&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s take a deliberately sketchy example with blocking calls But remember, blocking calls in a reactive chain are always sketchy! :)&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;Flux.fromIterable(firstListOfUrls) //contains A, B and C&#xD;
+    .map(url -&amp;gt; blockingWebClient.get(url))&#xD;
+    .subscribe(body -&amp;gt; System.out.println(Thread.currentThread().getName + &amp;quot; from first list, got &amp;quot; + body));&#xD;
+&#xD;
+Flux.fromIterable(secondListOfUrls) //contains D and E&#xD;
+    .map(url -&amp;gt; blockingWebClient.get(url))&#xD;
+    .subscribe(body -&amp;gt; System.out.prinln(Thread.currentThread().getName + &amp;quot; from second list, got &amp;quot; + body));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In the above example, assuming this code is executed on the &lt;em&gt;main&lt;/em&gt; thread, each &lt;code&gt;Flux.fromIterable&lt;/code&gt; emits the content of its &lt;code&gt;List&lt;/code&gt; on that same &lt;code&gt;Thread&lt;/code&gt;. We then use an imperative blocking web client inside a &lt;code&gt;map&lt;/code&gt; to fetch the body of each &lt;code&gt;url&lt;/code&gt;, which &amp;ldquo;inherits&amp;rdquo; that thread (and thus blocks it). The data-consuming lambda in each &lt;code&gt;subscribe&lt;/code&gt; is thus also running on the main thread.&lt;/p&gt;
+&lt;p&gt;As a consequence, all these urls are processed sequentially on the main thread:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;main from first list, got A&#xD;
+main from first list, got B&#xD;
+main from first list, got C&#xD;
+main from second list, got D&#xD;
+main from second list, got E
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If we introduce &lt;code&gt;publishOn&lt;/code&gt;, we can make this code more performant, so that the &lt;code&gt;Flux&lt;/code&gt; don&amp;rsquo;t block each other:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;Flux.fromIterable(firstListOfUrls) //contains A, B and C&#xD;
+    .publishOn(Schedulers.boundedElastic())&#xD;
+    .map(url -&amp;gt; blockingWebClient.get(url))&#xD;
+    .subscribe(body -&amp;gt; System.out.println(Thread.currentThread().getName + &amp;quot; from first list, got &amp;quot; + body));&#xD;
+&#xD;
+Flux.fromIterable(secondListOfUrls) //contains D and E&#xD;
+    .publishOn(Schedulers.boundedElastic())&#xD;
+    .map(url -&amp;gt; blockingWebClient.get(url))&#xD;
+    .subscribe(body -&amp;gt; System.out.prinln(Thread.currentThread().getName + &amp;quot; from second list, got &amp;quot; + body));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Which could give us something like the following output:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;boundedElastic-1 from first list, got A&#xD;
+boundedElastic-2 from second list, got D&#xD;
+boundedElastic-1 from first list, got B&#xD;
+boundedElastic-2 from second list, got E&#xD;
+boundedElastic-1 from first list, got C
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;First list and second list are interleaved now, great !&lt;/p&gt;&lt;h3&gt;&lt;a href="#the-code-subscribeon-scheduler-s-code-operator" class="anchor" name="the-code-subscribeon-scheduler-s-code-operator"&gt;&lt;/a&gt;The &lt;code&gt;subscribeOn(Scheduler s)&lt;/code&gt; operator&lt;/h3&gt;
+&lt;p&gt;In the preceding example we saw how &lt;code&gt;publishOn&lt;/code&gt; could be used to offset blocking work on a separate Thread, by switching the publication of the &lt;em&gt;triggers&lt;/em&gt; for that blocking work (the urls to fetch) on a provided &lt;code&gt;Scheduler&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Since the &lt;code&gt;map&lt;/code&gt; operator runs on its source thread, switching that source thread by putting a &lt;code&gt;publishOn&lt;/code&gt; before the &lt;code&gt;map&lt;/code&gt; works as intended.&lt;/p&gt;
+&lt;p&gt;But what if that url-fetching method was written by somebody else, and they regrettably forgot to add the &lt;code&gt;publishOn&lt;/code&gt;? Is there a way to influence the &lt;code&gt;Thread&lt;/code&gt; &lt;strong&gt;upstream&lt;/strong&gt;?&lt;/p&gt;
+&lt;p&gt;In a way, there is. That&amp;rsquo;s where &lt;code&gt;subscribeOn&lt;/code&gt; can come in handy.&lt;/p&gt;
+&lt;p&gt;This operator changes where the &lt;code&gt;subscribe&lt;/code&gt; method is executed. And since the subscribe signal flows upward, it directly influences where the source &lt;code&gt;Flux&lt;/code&gt; subscribes and starts generating data.&lt;/p&gt;
+&lt;p&gt;As a consequence, it can seem to act on the parts of the reactive chain of operators upward and downward (as long as there is no &lt;code&gt;publishOn&lt;/code&gt; thrown in the mix):&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;//code provided in library you have no write access to&#xD;
+final Flux&amp;lt;String&amp;gt; fetchUrls(List&amp;lt;String&amp;gt; urls) {&#xD;
+  return Flux.fromIterable(urls)&#xD;
+    .map(url -&amp;gt; blockingWebClient.get(url)); //oops!&#xD;
+}&#xD;
+&#xD;
+//your code:&#xD;
+fetchUrls(A, B, C)&#xD;
+  .subscribeOn(Schedulers.boundedElastic())&#xD;
+  .subscribe(body -&amp;gt; System.out.println(Thread.currentThread().getName + &amp;quot; from first list, got &amp;quot; + body));&#xD;
+&#xD;
+fetchUrls(D, E)&#xD;
+  .subscribeOn(Schedulers.boundedElastic())&#xD;
+  .subscribe(body -&amp;gt; System.out.prinln(Thread.currentThread().getName + &amp;quot; from second list, got &amp;quot; + body));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Like in our second &lt;code&gt;publishOn&lt;/code&gt; example, that code will correctly output something like:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;boundedElastic-1 from first list, got A&#xD;
+boundedElastic-2 from second list, got D&#xD;
+boundedElastic-1 from first list, got B&#xD;
+boundedElastic-2 from second list, got E&#xD;
+boundedElastic-1 from first list, got C
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So what happened?&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;subscribe&lt;/code&gt; calls are still running on the &lt;em&gt;main&lt;/em&gt; thread, but they propagate a &lt;code&gt;subscribe&lt;/code&gt; signal to their source, &lt;code&gt;subscribeOn&lt;/code&gt;. In turn &lt;code&gt;subscribeOn&lt;/code&gt; propagates that same signal to its own source from &lt;code&gt;fetchUrls&lt;/code&gt;, &lt;strong&gt;but on a &lt;em&gt;boundedElastic&lt;/em&gt; &lt;code&gt;Worker&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In the &lt;code&gt;Flux&lt;/code&gt; sequence returned by &lt;code&gt;fetchUrls&lt;/code&gt;, the map is subscribed on the boundedElastic worker thread, and so is the &lt;code&gt;range&lt;/code&gt;. The &lt;code&gt;range&lt;/code&gt; starts generating data, still on the boundedElastic worker thread.&lt;/p&gt;
+&lt;p&gt;This continues down the data path, each subscriber executing &lt;code&gt;onNext&lt;/code&gt; on its source thread, the &lt;code&gt;boundedElastic&lt;/code&gt; one.&lt;/p&gt;
+&lt;p&gt;At last, the lambdas configured in the &lt;code&gt;subscribe(...)&lt;/code&gt; call are also executed on the &lt;code&gt;boundedElastic&lt;/code&gt; thread.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;&lt;/p&gt;
+  &lt;p&gt;It is important to distinguish the &lt;em&gt;act&lt;/em&gt; of subscribing and the lambda passed to the &lt;code&gt;subscribe()&lt;/code&gt; method. This method subscribes to its source &lt;code&gt;Flux&lt;/code&gt;, but the lambda are executed at the end of processing, when the data has flown through all the steps (including steps that hop to another thread),.&lt;/p&gt;
+  &lt;p&gt;So the &lt;code&gt;Thread&lt;/code&gt; on which the lambda is executed might be different from the subscription &lt;code&gt;Thread&lt;/code&gt; , ie. the thread on which the &lt;code&gt;subscribe&lt;/code&gt; method is called.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And if we were the author of the &lt;code&gt;fetchUrls&lt;/code&gt; library, we could make the code even more performant by letting each fetch run on its own &lt;code&gt;Worker&lt;/code&gt;, by leveraging &lt;code&gt;subscribeOn&lt;/code&gt; in a slightly different way:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;final Flux&amp;lt;String&amp;gt; betterFetchUrls(List&amp;lt;String&amp;gt; urls) {&#xD;
+  return Flux.fromIterable(urls)&#xD;
+    .flatMap(url -&amp;gt; &#xD;
+             //wrap the blocking call in a Mono&#xD;
+             Mono.fromCallable(() -&amp;gt; blockingWebClient.get(url))&#xD;
+             //ensure that Mono is subscribed in an boundedElastic Worker&#xD;
+             .subscribeOn(Schedulers.boundedElastic())&#xD;
+    ); //each individual URL fetch runs in its own thread!&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h3&gt;&lt;a href="#and-what-if-i-mix-the-two" class="anchor" name="and-what-if-i-mix-the-two"&gt;&lt;/a&gt;And What If I Mix the Two?&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;subscribeOn&lt;/code&gt; will act throughout the subscribe phase, from bottom to top, then on the data path until it encounters a &lt;code&gt;publishOn&lt;/code&gt; (or a time based operator).&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s consider the following example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint java"&gt;Flux.just(&amp;quot;hello&amp;quot;)&#xD;
+    .doOnNext(v -&amp;gt; System.out.println(&amp;quot;just &amp;quot; + Thread.currentThread().getName()))&#xD;
+    .publishOn(Scheduler.boundedElastic())&#xD;
+    .doOnNext(v -&amp;gt; System.out.println(&amp;quot;publish &amp;quot; + Thread.currentThread().getName()))&#xD;
+    .delayElements(Duration.ofMillis(500))&#xD;
+    .subscribeOn(Schedulers.elastic())&#xD;
+    .subscribe(v -&amp;gt; System.out.println(v + &amp;quot; delayed &amp;quot; + Thread.currentThread().getName()));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This will print:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;just elastic-1&#xD;
+publish boundedElastic-1&#xD;
+hello delayed parallel-1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We should unpack what happened step by step:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Here &lt;code&gt;subscribe&lt;/code&gt; is called on the &lt;em&gt;main&lt;/em&gt; thread, but subscription is rapidly switched to the &lt;code&gt;elastic&lt;/code&gt; scheduler due to the &lt;code&gt;subscribeOn&lt;/code&gt; immediately above.&lt;/li&gt;
+  &lt;li&gt;All the operators above it are also subscribed on &lt;code&gt;elastic&lt;/code&gt;, from bottom to top.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;just&lt;/code&gt; emits its value on the &lt;code&gt;elastic&lt;/code&gt; scheduler.&lt;/li&gt;
+  &lt;li&gt;the first &lt;code&gt;doOnNext&lt;/code&gt; receives that value on the same thread and prints it out: &lt;code&gt;just elastic-1&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;then on the top to bottom data path, we encounter the &lt;code&gt;publishOn&lt;/code&gt;: data from &lt;code&gt;doOnNext&lt;/code&gt; is propagated downstream on the &lt;code&gt;boundedElastic&lt;/code&gt; scheduler.&lt;/li&gt;
+  &lt;li&gt;the second &lt;code&gt;doOnNext&lt;/code&gt; receives its data on &lt;code&gt;boundedElastic&lt;/code&gt; and prints &lt;code&gt;publish bounderElastic-1&lt;/code&gt; accordingly.&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;delayElements&lt;/code&gt; is a time operator, so by default it publishes data on the &lt;code&gt;Schedulers.parallel()&lt;/code&gt; scheduler.&lt;/li&gt;
+  &lt;li&gt;on the data path, &lt;code&gt;subscribeOn&lt;/code&gt; does nothing but propagating signal on the same thread.&lt;/li&gt;
+  &lt;li&gt;on the data path, the lambda(s) passed to &lt;code&gt;subscribe(...)&lt;/code&gt; are executed on the thread in which data signals are received, so the lambda prints &lt;code&gt;hello delayed parallel-1&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#conclusion" class="anchor" name="conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In this article, we’ve learned about the &lt;code&gt;Scheduler&lt;/code&gt; abstraction and how it enables advanced usage like the &lt;code&gt;VirtualTimeScheduler&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We then have learned how to switch threads (or rather &lt;code&gt;Scheduler&lt;/code&gt; workers) in the middle of a reactive sequence, and what is the difference between &lt;code&gt;publishOn&lt;/code&gt; and &lt;code&gt;subscribeOn&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In the next instalment, we’ll dig deeper in the innards of the library to describe some optimizations that are in place to ensure Reactor&amp;rsquo;s performance.&lt;/p&gt;
+&lt;p&gt;In the meantime, happy reactive coding!&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot for Apache Geode &amp; Pivotal GemFire 1.1.4.RELEASE &amp; 1.2.2.RELEASE Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/12/spring-boot-for-apache-geode-pivotal-gemfire-1-1-4-release-1-2-2-release-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>John Blum</name>
+    </author>
+    <id>tag:spring.io,2019-12-12:3909</id>
+    <updated>2019-12-12T19:49:38Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the Spring, Apache Geode &amp;amp; Pivotal GemFire communities, it is my pleasure to announce the release of &lt;em&gt;Spring Boot for Apache Geode &amp;amp; Pivotal GemFire&lt;/em&gt; (SBDG) &lt;code&gt;1.1.4.RELEASE&lt;/code&gt; as well as &lt;code&gt;1.2.2.RELEASE&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Both releases are available in &lt;a href="https://search.maven.org/artifact/org.springframework.geode/spring-geode-starter"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="whats-new"&gt;&lt;a class="anchor" href="#whats-new"&gt;&lt;/a&gt;What&amp;#8217;s New&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;While SBDG &lt;code&gt;1.1.4.RELEASE&lt;/code&gt; primarily aligns with the latest Spring bits in its release line:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;5.1.12.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Boot &lt;code&gt;2.1.11.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Data &lt;code&gt;Lovelace-SR14/2.1.14.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Session for Apache Geode &amp;amp; Pivotal GemFire (SSDG) &lt;code&gt;Bean-SR8/2.1.7.RELEASE&lt;/code&gt; (&lt;strong&gt;NEW&lt;/strong&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;And SBDG &lt;code&gt;1.2.2.RELEASE&lt;/code&gt; builds on:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;5.2.2.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Boot &lt;code&gt;2.2.2.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Data &lt;code&gt;Moore-SR3/2.2.3.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Session for Apache Geode &amp;amp; Pivotal GemFire (SSDG) &lt;code&gt;Corn-RELEASE/2.2.1.RELEASE&lt;/code&gt; (&lt;strong&gt;NEW&lt;/strong&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Test for Apache Geode &amp;amp; Pivotal GemFire (STDG) &lt;code&gt;0.0.11.RELEASE&lt;/code&gt; (&lt;strong&gt;NEW&lt;/strong&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;SBDG &lt;code&gt;1.2.2.RELEASE&lt;/code&gt; additionally includes the following improvements:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Enhancements to &lt;code&gt;@EnableClusterAware&lt;/code&gt; Region bean detection.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Changes the Pool used in the Spring Session Starter from (the legacy SDG) "gemfirePool" to the Apache Geode "DEFAULT" Pool for convenience, especially when getting started.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/milestone/26?closed=1"&gt;here&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/blob/1.2.2.RELEASE/spring-geode/src/main/resources/changelog.txt#L7-L38"&gt;changelog&lt;/a&gt; for complete details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="whats-next"&gt;&lt;a class="anchor" href="#whats-next"&gt;&lt;/a&gt;What&amp;#8217;s Next&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We will continue to address Issues in our &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/issues"&gt;backlog&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;1 improvement in a future release (~1.3 M1/M2) will include support to populate an Apache Geode or Pivotal GemFire Region using a &lt;code&gt;data.json&lt;/code&gt; file in the same way a Spring Boot user can use &lt;code&gt;data.sql&lt;/code&gt; to populate DBMS Tables.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/issues/67"&gt;Issue #67&lt;/a&gt; for full details and to track progress.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="conclusion"&gt;&lt;a class="anchor" href="#conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;As always, any feedback is welcomed and appreciated.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Thank you.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-boot-data-geode/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/pulls"&gt;PR&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Session for Apache Geode &amp; Pivotal GemFire 2.1.7.RELEASE and 2.2.1.RELEASE Available</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/12/spring-session-for-apache-geode-pivotal-gemfire-2-1-7-release-and-2-2-1-release-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>John Blum</name>
+    </author>
+    <id>tag:spring.io,2019-12-12:3908</id>
+    <updated>2019-12-12T19:13:20Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the Spring, Apache Geode and Pivotal GemFire communities, it is my pleasure to announce the release of &lt;em&gt;Spring Session for Apache Geode &amp;amp; Pivotal GemFire&lt;/em&gt; (SSDG)  &lt;code&gt;2.1.7.RELEASE&lt;/code&gt; as well as &lt;code&gt;2.2.1.RELEASE&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Both releases are available in &lt;a href="https://search.maven.org/artifact/org.springframework.session/spring-session-data-geode"&gt;Maven Central&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="whats-new"&gt;&lt;a class="anchor" href="#whats-new"&gt;&lt;/a&gt;What&amp;#8217;s New&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;While SSDG &lt;code&gt;2.1.7.RELASE&lt;/code&gt; primarily aligns with the latest Spring bits in its respective line:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;5.1.12.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Boot &lt;code&gt;2.1.11.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Data &lt;code&gt;Lovelace-SR14/2.1.14.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Session &lt;code&gt;Bean-SR8/2.1.9.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;And SSDG &lt;code&gt;2.2.1.RELEASE&lt;/code&gt; aligns with:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Framework &lt;code&gt;5.2.2.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Boot &lt;code&gt;2.2.2.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Data &lt;code&gt;Moore-SR3/2.2.3.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Spring Session &lt;code&gt;Corn-RELEASE/2.2.0.RELEASE&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;SSDG &lt;code&gt;2.2.1.RELEASE&lt;/code&gt; additionally includes the following improvements:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Converts all Spring Session OQL Indexes from HASH to FUNCTIONAL (RANGE) Indexes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adds support to disable OQL Indexes created by SSDG.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;And enhances the PdxSerializableSessionSerializer to mark the PDX identity field using the Session ID.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See &lt;a href="https://github.com/spring-projects/spring-session-data-geode/milestone/20?closed=1"&gt;here&lt;/a&gt; for full details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="whats-next"&gt;&lt;a class="anchor" href="#whats-next"&gt;&lt;/a&gt;What&amp;#8217;s Next&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Heading into the New Year (2020), we plan to tackle much of what is in our &lt;a href="https://github.com/spring-projects/spring-session-data-geode/issues"&gt;backlog&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="conclusion"&gt;&lt;a class="anchor" href="#conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;As always, feedback is welcomed and appreciated.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session-data-geode/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-session-data-geode/pulls"&gt;PR&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session"&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot 2.1.x EOL November 1st 2020</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/10/spring-boot-2-1-x-eol-november-1st-2020" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Phil Webb</name>
+    </author>
+    <id>tag:spring.io,2019-12-10:3907</id>
+    <updated>2019-12-10T22:57:31Z</updated>
+    <content type="html">&lt;p&gt;With the recent release of Spring Boot 2.2, we&amp;rsquo;d like to announce that maintenance for Spring Boot 2.1 will end on November 1st 2020.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll keep publishing the occasional maintenance release up until that point, but we recommend that all users consider upgrading to Spring Boot 2.2 as soon as possible. Upgrading to Spring Boot 2.2 from 2.1 should not be too difficult, and upgrade instructions are &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.2-Release-Notes#upgrading-from-spring-boot-21"&gt;available on the WIKI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In order to help track the state of supported releases we&amp;rsquo;ve also introduced a &lt;a href="https://github.com/spring-projects/spring-boot/wiki/Supported-Versions"&gt;new &amp;ldquo;supported versions&amp;rdquo; WIKI page&lt;/a&gt;. You can see at a glance which Spring Boot versions are supported and when they will EOL.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>This Week in Spring - December 10th, 2019</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/10/this-week-in-spring-december-10th-2019" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-12-10:3906</id>
+    <updated>2019-12-10T01:41:10Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! Today I just wrapped up my appearance in Brisbane, Australia, where I have been for the epic YOW! conference. Truly, one of my all-time favorite shows on the planet. I feel like an imposter in the ranks of the other speakers. I can not recommend this show enough.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m just about to board my fight back to San Francisco, and we&amp;rsquo;ve got a ton of stuff to get to so let&amp;rsquo;s press on! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/09/spring-cloud-data-flow-2-3-0-ga-released"&gt;Spring Cloud Data Flow 2.3.0 GA Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/09/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-6-state-stores-and-interactive-queries"&gt;Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 6 - State Stores and Interactive Queries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/06/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-5-application-customizations"&gt;Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 5 - Application Customizations&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/06/spring-data-r2dbc-goes-ga"&gt;Spring Data R2DBC goes GA&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/06/spring-boot-2-2-2-is-now-available"&gt;Spring Boot 2.2.2 is now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/06/spring-boot-2-1-11-is-now-available"&gt;Spring Boot 2.1.11 is now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;In last week&amp;rsquo;s &lt;em&gt;A Bootiful Podcast&lt;/em&gt;, I talked to &lt;a href="https://spring.io/blog/2019/12/05/a-bootiful-podcast-pivotal-s-katrina-bakas-about-the-pivotal-healthwatch-product-kubernetes-cloud-foundry-and-so-much-more"&gt;Pivotal&amp;rsquo;s Katrina Bakas about the Pivotal HealthWatch product, Kubernetes, Cloud Foundry and so much more.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/05/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-4-error-handling"&gt;Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 4 - Error Handling&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/04/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-3-data-deserialization-and-serialization"&gt;Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 3 - Data deserialization and serialization&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/04/spring-data-moore-sr3-and-lovelace-sr14-released"&gt;Spring Data Moore SR3 and Lovelace SR14 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/03/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-2-programming-model-continued"&gt;Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 2 - Programming Model Continued&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/03/spring-framework-maintenance-roadmap-in-2020-including-4-3-eol"&gt;Spring Framework maintenance roadmap in 2020 (including 4.3 EOL)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2019/12/03/spring-framework-5-2-2-and-5-1-12-available-now"&gt;Spring Framework 5.2.2 and 5.1.12 available now&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Reactor team member Sergei Egorov&amp;rsquo;s new &lt;a href="https://bsideup.github.io/posts/daily_reactive/where_is_my_exception/"&gt;&lt;em&gt;Daily Reactive&lt;/em&gt;&lt;/a&gt; series looks awesome! Well worth a read, too!&lt;/li&gt;
+  &lt;li&gt;Have you checked out this month&amp;rsquo;s &lt;a href="https://www.rabbitmq.com/blog/2019/12/07/this-month-in-rabbitmq-november-2019-recap/"&gt;&lt;em&gt;This Month in RabbitMQ&lt;/em&gt; roundup yet?&lt;/a&gt;&lt;br/&gt;conference-recording-recommendations-2019/)&lt;/li&gt;
+  &lt;li&gt;I love Trisha Gee’s tutorial series introducing &lt;a href="https://blog.jetbrains.com/idea/tag/tutorial-reactive-spring/"&gt; reactive Spring Boot.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Cloud Data Flow 2.3.0 GA Released</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/09/spring-cloud-data-flow-2-3-0-ga-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Janne Valkealahti</name>
+    </author>
+    <id>tag:spring.io,2019-12-06:3904</id>
+    <updated>2019-12-09T19:16:48Z</updated>
+    <content type="html">&lt;p&gt;The release 2.3.0 delivers a lot of enhancements and generic compatibility changes for Spring Boot 2.2.x and Spring Cloud Hoxton.&lt;/p&gt;&lt;h2&gt;&lt;a href="#continuous-deployment-for-tasks" class="anchor" name="continuous-deployment-for-tasks"&gt;&lt;/a&gt;Continuous Deployment For Tasks&lt;/h2&gt;
+&lt;p&gt;As task applications evolve faster to keep up with business needs, the ability for new versions to be consumed via Data Flow in an automated way is needed. While Data Flow has supported the ability to register multiple versions of a task application in previous iterations, the ability to run them in a practical way by re-hydrating command line arguments, deployment properties, and application properties used in previous executions has been missing. In this version, the storage of those values in a manifest and the ability to both retrieve them to determine if an application needs to be upgraded and apply them to the new execution allows for developers to create continuous deployment flows for their task applications. All these capabilities are readily available through RESTful APIs, as well, so the overall CI/CD workflow for Tasks can be automated.&lt;/p&gt;&lt;h2&gt;&lt;a href="#scheduler-improvements" class="anchor" name="scheduler-improvements"&gt;&lt;/a&gt;Scheduler improvements&lt;/h2&gt;
+&lt;p&gt;Scheduling has been updated to support the Task’s CI/CD features. Thus when the Kubernetes or Cloud Foundry Task-scheduler launches the application after the user updates the Task application to a new version, the next execution in Spring Cloud Data Flow will take advantage of these updates automatically.&lt;/p&gt;&lt;h2&gt;&lt;a href="#monitoring-improvements" class="anchor" name="monitoring-improvements"&gt;&lt;/a&gt;Monitoring improvements&lt;/h2&gt;
+&lt;p&gt;In this release, we have revised the monitoring architecture to drive towards a consistent experience in Local, Kubernetes, and Cloud Foundry.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Using &lt;a href="https://github.com/micrometer-metrics/prometheus-rsocket-proxy"&gt;Prometheus RSocket Proxy&lt;/a&gt; as a default approach for Prometheus-based monitoring of the &lt;a href="https://github.com/micrometer-metrics/prometheus-rsocket-proxy#support-for-short-lived-or-serverless-applications"&gt;short lived&lt;/a&gt; Tasks, as well as long-lived streaming applications, and across all supported platforms.&lt;/li&gt;
+  &lt;li&gt;Native &lt;a href="https://dataflow.spring.io/docs/2.3.0.SNAPSHOT/feature-guides/batch/monitoring/"&gt;monitoring of Spring Cloud Tasks and Spring Cloud Batch&lt;/a&gt;, complements to the existing monitoring support for streaming applications through Spring Cloud Streams.&lt;/li&gt;
+  &lt;li&gt;We have a few &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow-samples/tree/master/monitoring-samples"&gt;monitoring-samples&lt;/a&gt;. You will find instructions for building custom Stream and Task applications integrated with the Data Flow Monitoring Architecture:&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow-samples/tree/master/monitoring-samples/stream-apps"&gt;stream-apps&lt;/a&gt; - how to enable monitoring for custom built source, processor and sink apps.&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow-samples/tree/master/monitoring-samples/task-apps"&gt;task-apps&lt;/a&gt; - how to enable monitoring for custom built task apps.&lt;/li&gt;
+  &lt;li&gt;Allow using the monitoring architecture to implement elastic, auto-scaling adapters for stream pipelines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src="https://user-images.githubusercontent.com/50398/70357194-37365c00-186e-11ea-9bc2-5dfe4924d114.gif" alt="SCDF-monitoring-promethesu-proxy" /&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#kubernetes-deployer-improvements" class="anchor" name="kubernetes-deployer-improvements"&gt;&lt;/a&gt;Kubernetes deployer improvements&lt;/h2&gt;
+&lt;p&gt;The following new capabilities are readily available as &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/2.3.0.RELEASE/reference/htmlsingle/#configuration-kubernetes-deployer"&gt;deployment properties&lt;/a&gt; in Kubrentes for both streaming and batch data pipelines.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Support for Node Affinity, Pod Affinity and Anti-Affinity&lt;/li&gt;
+  &lt;li&gt;Ability to add multiple ports to Service objects&lt;/li&gt;
+  &lt;li&gt;Allow customization of the container image used in StatefulSet deployments&lt;/li&gt;
+  &lt;li&gt;Implementation of Scaling API&lt;/li&gt;
+  &lt;li&gt;Support for custom init containers&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#helm-chart-improvements" class="anchor" name="helm-chart-improvements"&gt;&lt;/a&gt;Helm chart improvements&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ability to enable monitoring support using Prometheus and Grafana&lt;/li&gt;
+  &lt;li&gt;Try out the &lt;a href="https://hub.helm.sh/charts/stable/spring-cloud-data-flow"&gt;2.3 GA compatible version of the Helm Chart&lt;/a&gt; and let us know what you think!&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#scaling-api" class="anchor" name="scaling-api"&gt;&lt;/a&gt;Scaling API&lt;/h2&gt;
+&lt;p&gt;The addition of new scaling API is available to quickly alter the number of application instances without redeploying a whole stream with updates to the deployment properties. The Scaling API is agnostic to the target platform and can be used seamlessly with K8s, CF and Local.&lt;/p&gt;&lt;h2&gt;&lt;a href="#import-export-utility" class="anchor" name="import-export-utility"&gt;&lt;/a&gt;Import/Export Utility&lt;/h2&gt;
+&lt;p&gt;We also made it easier to work with multiple environments by adding &lt;a href="https://docs.spring.io/spring-cloud-dataflow/docs/2.3.0.RELEASE/reference/htmlsingle/#_import_export_streams"&gt;Import/Export Streams&lt;/a&gt; feature which provides easy moving streams across different environments, e.g. dev, test, prod.&lt;/p&gt;&lt;h2&gt;&lt;a href="#security" class="anchor" name="security"&gt;&lt;/a&gt;Security&lt;/h2&gt;
+&lt;p&gt;Our journey to fully move into next generation Spring Security OAuth2 support is almost complete and we expect to finalize it in next releases. There is a blog post &lt;a href="https://spring.io/blog/2018/01/30/next-generation-oauth-2-0-support-with-spring-security"&gt;Next Generation OAuth 2.0 Support with Spring Security&lt;/a&gt; which outlined where things are going in a Spring world.&lt;/p&gt;&lt;h2&gt;&lt;a href="#developer-surveys" class="anchor" name="developer-surveys"&gt;&lt;/a&gt;Developer Surveys&lt;/h2&gt;
+&lt;p&gt;We have released one major release (2.0), three minor releases (2.1, 2.2, and 2.3), and several maintenance releases in 2019! Likewise, Spring Cloud Stream, Spring Cloud Task, Deployers, Skipper, Apps, and remaining others in the SCDF ecosystem independently evolved in isolation, as well.&lt;/p&gt;
+&lt;p&gt;Thank you, everyone, for your support, contributions, and participation!&lt;/p&gt;
+&lt;p&gt;As we are inching towards the New Year’s, we wanted to reach out to the community to learn about your interests and feedback. Please take these super quick 1-page surveys and let us know.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://forms.gle/VWjQai7DzBTFNVof6"&gt;Spring Cloud Data Flow&lt;/a&gt;&lt;br/&gt;&lt;a href="https://forms.gle/z9ja25wQrDZSmeQb7"&gt;Spring Cloud Stream&lt;/a&gt;&lt;br/&gt;&lt;a href="https://forms.gle/upYHVn3wVJnHKbyB8"&gt;Spring Cloud Task&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#stay-in-touch-hellip" class="anchor" name="stay-in-touch-hellip"&gt;&lt;/a&gt;Stay in touch&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;As always, we welcome feedback and contributions, so please reach out to us on &lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-dataflow"&gt;Stackoverflow&lt;/a&gt; or &lt;a href="https://github.com/spring-cloud/spring-cloud-dataflow/issues"&gt;GitHub&lt;/a&gt; or via &lt;a href="https://gitter.im/spring-cloud/spring-cloud-dataflow"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 6 - State Stores and Interactive Queries</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/09/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-6-state-stores-and-interactive-queries" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Soby Chacko</name>
+    </author>
+    <id>tag:spring.io,2019-12-09:3905</id>
+    <updated>2019-12-09T18:04:21Z</updated>
+    <content type="html">&lt;p&gt;Part 1 - &lt;a href="https://spring.io/blog/2019/12/02/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-1-programming-model"&gt;Programming Model&lt;/a&gt;&lt;br/&gt;Part 2 - &lt;a href="https://spring.io/blog/2019/12/03/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-2-programming-model-continued"&gt;Programming Model Continued&lt;/a&gt;&lt;br/&gt;Part 3 - &lt;a href="https://spring.io/blog/2019/12/04/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-3-data-deserialization-and-serialization"&gt;Data deserialization and serialization&lt;/a&gt;&lt;br/&gt;Part 4 - &lt;a href="https://spring.io/blog/2019/12/05/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-4-error-handling"&gt;Error Handling&lt;/a&gt;&lt;br/&gt;Part 5 - &lt;a href="https://spring.io/blog/2019/12/06/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-5-application-customizations"&gt;Application Customizations&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this part (the sixth and final one of this series), we are going to look into the ways Spring Cloud Stream Binder for Kafka Streams supports state stores and interactive queries in Kafka Streams.&lt;/p&gt;&lt;h2&gt;&lt;a href="#named-state-stores" class="anchor" name="named-state-stores"&gt;&lt;/a&gt;Named State Stores&lt;/h2&gt;
+&lt;p&gt;When you have the need to maintain state in the application, Kafka Streams lets you materialize that state information into a named state store. There are several operations in Kafka Streams that require it to keep track of the state such as &lt;code&gt;count&lt;/code&gt;, &lt;code&gt;aggregate&lt;/code&gt;, &lt;code&gt;reduce&lt;/code&gt;, various &lt;code&gt;windowing&lt;/code&gt; operations, and others. Kafka Streams uses a special database called &lt;a href="https://rocksdb.org/"&gt;RocksDB&lt;/a&gt; for maintaining this state store in most cases (unless you explicitly change the store type). By default, the same information in the state store is backed up to a changelog topic as well as within Kafka, for fault-tolerant reasons. &lt;/p&gt;
+&lt;p&gt;When you explicitly materialize state like this into a named state store, this gives the ability for applications to query that state store at a later stage. This is a very powerful feature, as this gives you the ability to query into a database-like structure from within your Kafka Streams applications.&lt;/p&gt;&lt;h2&gt;&lt;a href="#consuming-data-as-ktable-or-globalktable" class="anchor" name="consuming-data-as-ktable-or-globalktable"&gt;&lt;/a&gt;Consuming data as KTable or GlobalKTable&lt;/h2&gt;
+&lt;p&gt;Kafka Streams binder-based applications can bind to destinations as &lt;code&gt;KTable&lt;/code&gt; or &lt;code&gt;GlobalKTable&lt;/code&gt;. &lt;code&gt;GlobalKTable&lt;/code&gt; is a special table type, where you get data from all partitions of an input topic, regardless of the instance that it is running. By contrast, a &lt;code&gt;KTable&lt;/code&gt; gives you only data from the respective partitions of the topic that the instance is consuming from. &lt;/p&gt;
+&lt;p&gt;The following is a function signature we saw earlier in this series of blog posts:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public Function&amp;lt;KStream&amp;lt;Long, Order&amp;gt;,&#xD;
+     Function&amp;lt;KTable&amp;lt;Long, Customer&amp;gt;,&#xD;
+           Function&amp;lt;GlobalKTable&amp;lt;Long, Product&amp;gt;, KStream&amp;lt;Long, EnrichedOrder&amp;gt;&amp;gt;&amp;gt;&amp;gt; process() {
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As you can see, this function has three input bindings, one &lt;code&gt;KStream&lt;/code&gt;, one &lt;code&gt;KTable&lt;/code&gt;, and another &lt;code&gt;GlobalKTable&lt;/code&gt;. Kafka Streams lets you materialize tables consumed like these into named state stores, given that these tables are based on a primary key. You can use the binding level property to materialize them into named state stores along with consumption. The following examples show how to do so:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;spring.cloud.stream.kafka.streams.bindings.process-in-1.consumer.materializedAs: incoming-store-1&#xD;
+spring.cloud.stream.kafka.streams.bindings.process-in-2.consumer.materializedAs: incoming-store-2
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#kafka-streams-dsl-operations-materialized-into-state-stores" class="anchor" name="kafka-streams-dsl-operations-materialized-into-state-stores"&gt;&lt;/a&gt;Kafka Streams DSL operations materialized into state stores&lt;/h2&gt;
+&lt;p&gt;There are various methods in the Kafka Streams high-level DSL, which returns table types such as &lt;code&gt;count&lt;/code&gt;, &lt;code&gt;aggregate&lt;/code&gt;, and &lt;code&gt;reduce&lt;/code&gt;. There are other operations that use state stores to keep track of information. For example, the various join method calls in &lt;code&gt;KStream&lt;/code&gt;, although they return a &lt;code&gt;KStream&lt;/code&gt; type, internally use state stores to keep the joined data. In summary, when Kafka Streams lets you materialize data either as a table or stream, it is materialized into a state store, much like data stored in a database table. &lt;/p&gt;&lt;h2&gt;&lt;a href="#explicit-state-stores-to-use-in-low-level-processors" class="anchor" name="explicit-state-stores-to-use-in-low-level-processors"&gt;&lt;/a&gt;Explicit state stores to use in low-level processors&lt;/h2&gt;
+&lt;p&gt;When using the processor API of Kafka Streams, which gives you more flexibility on how the stream is processed, you have to declare a state store beforehand and provide that to the StreamsBuilder. Kafka Streams binder can scan the application to detect beans of type StoreBuilder and then use that to create state stores and pass them along with the underlying StreamsBuilder through the StreamsBuilderFactoryBean. Here is a look at such beans:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public StoreBuilder myStore() {&#xD;
+  return Stores.keyValueStoreBuilder(&#xD;
+        Stores.persistentKeyValueStore(&amp;quot;my-store&amp;quot;), Serdes.Long(),&#xD;
+        Serdes.Long());&#xD;
+}&#xD;
+&#xD;
+@Bean&#xD;
+public StoreBuilder otherStore() {&#xD;
+  return Stores.windowStoreBuilder(&#xD;
+        Stores.persistentWindowStore(&amp;quot;other-store&amp;quot;,&#xD;
+              Duration.ofSeconds(3), Duration.ofSeconds(3),  false), Serdes.Long(),&#xD;
+        Serdes.Long());&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The two StoreBuilder beans are detected by the binder, and it then attaches them to the streams builder automatically. Later on, you can access them, in your processor API based applications, as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;…&#xD;
+KeyValueStore&amp;lt;Long, Long&amp;gt; state1;&#xD;
+WindowStore&amp;lt;Long, Long&amp;gt; state2;&#xD;
+...&#xD;
+@Bean&#xD;
+public java.util.function.Consumer&amp;lt;KStream&amp;lt;Object, String&amp;gt;&amp;gt; process() {&#xD;
+  return input -&amp;gt;&#xD;
+        input.process((ProcessorSupplier&amp;lt;Object, String&amp;gt;) () -&amp;gt; new Processor&amp;lt;Object, String&amp;gt;() {&#xD;
+           @Override&#xD;
+            public void init(ProcessorContext context) {&#xD;
+              state1 = (KeyValueStore&amp;lt;Long, Long&amp;gt;) context.getStateStore(&amp;quot;my-store&amp;quot;);&#xD;
+              state2 = (WindowStore&amp;lt;Long, Long&amp;gt;) context.getStateStore(&amp;quot;other-store&amp;quot;);&#xD;
+           }&#xD;
+&#xD;
+           @Override&#xD;
+           public void process(Object key, String value) {&#xD;
+              // processing code&#xD;
+           }&#xD;
+&#xD;
+           @Override&#xD;
+           public void close() {&#xD;
+              if (state1 != null) {&#xD;
+                 state1.close();&#xD;
+              }&#xD;
+              if (state2 != null) {&#xD;
+                 state2.close();&#xD;
+              }&#xD;
+           }&#xD;
+        }, &amp;quot;my-store&amp;quot;, &amp;quot;other-store&amp;quot;);&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One quick note about the usage of the processor API in Kafka Streams binder-based applications. The only way you can use the low-level processor API when you use the binder is through a usage pattern of higher-level DSL and then combine that with a transform or process call on it, as shown in the preceding example. See &lt;a href="https://cloud.spring.io/spring-cloud-static/spring-cloud-stream-binder-kafka/3.0.0.RELEASE/reference/html/spring-cloud-stream-binder-kafka.html#_mixing_high_level_dsl_and_low_level_processor_api"&gt;here&lt;/a&gt; for more details on how the processor API can be used in a binder based application. &lt;/p&gt;
+&lt;p&gt;Instead of creating &lt;code&gt;StoreBuilder&lt;/code&gt; beans in the application, you can also use the &lt;code&gt;StreamsBuilderFactoryBean&lt;/code&gt; customizer which we saw in the &lt;a href="https://spring.io/blog/2019/12/06/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-5-application-customizations"&gt;previous blog&lt;/a&gt;, to add the state stores programmatically, if that is your preference. &lt;/p&gt;&lt;h2&gt;&lt;a href="#using-interactive-queries-to-query-data-from-state-stores" class="anchor" name="using-interactive-queries-to-query-data-from-state-stores"&gt;&lt;/a&gt;Using interactive queries to query data from state stores&lt;/h2&gt;
+&lt;p&gt;Kafka Streams lets you interactively query the data in the state store in real time as live stream processing is going on. The binder provides abstractions around this feature to make it easier to work with interactive queries. &lt;code&gt;InteractiveQueryService&lt;/code&gt; is a basic API that the binder provides to work with state store querying. You can usually inject this as a bean into your application and then invoke various API methods from it. Here is an example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Autowired&#xD;
+private InteractiveQueryService interactiveQueryService;&#xD;
+ …&#xD;
+ ...&#xD;
+ReadOnlyKeyValueStore&amp;lt;Object, Object&amp;gt; keyValueStore =&#xD;
+                                                interactiveQueryService.getQueryableStoreType(&amp;quot;my-store&amp;quot;, QueryableStoreTypes.keyValueStore());
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then you can invoke various retrieval methods from the store and iterate through the result. There are various methods that you can invoke from these state stores based on your use case and the type of state store that you are using. Please refer to the Kafka Streams documentation for &lt;a href="https://kafka.apache.org/10/documentation/streams/developer-guide/interactive-queries.html"&gt;interactive queries&lt;/a&gt; for these various iteration methods available. &lt;/p&gt;&lt;h2&gt;&lt;a href="#interactive-queries-over-rpc-mechanisms" class="anchor" name="interactive-queries-over-rpc-mechanisms"&gt;&lt;/a&gt;Interactive Queries over RPC Mechanisms&lt;/h2&gt;
+&lt;p&gt;Oftentimes, you want to expose the state of your system from state stores over an RPC mechanism. You can combine Spring web support for writing powerful REST based applications in this manner. Here is a blueprint:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@RestController&#xD;
+public class Controller {&#xD;
+&#xD;
+		@RequestMapping(&amp;quot;/song/id&amp;quot;)&#xD;
+		public SongBean song(@RequestParam(value=&amp;quot;id&amp;quot;) Long id) {&#xD;
+			final ReadOnlyKeyValueStore&amp;lt;Long, Song&amp;gt; songStore =&#xD;
+					interactiveQueryService.getQueryableStore(“song-store”, QueryableStoreTypes.&amp;lt;Long, Song&amp;gt;keyValueStore());&#xD;
+&#xD;
+			final Song song = songStore.get(id);&#xD;
+			if (song == null) {&#xD;
+				throw new IllegalArgumentException(&amp;quot;...&amp;quot;);&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This REST controller can be accessed from a front end web application for example. &lt;/p&gt;
+&lt;p&gt;This usage pattern obviously raises concerns. What happens if there are multiple Kafka Streams application instances running? For instance, what if there are 3 instances in which each of them is pulling data from a single source partition? Which controller instance is going to be responsible for providing information for key &lt;em&gt;X&lt;/em&gt;? What if key &lt;em&gt;X&lt;/em&gt; is only hosted in partition 3 and that happens to be the instance 3, but the request landed on instance 1. This is obviously a problem, but Kafka Streams provides a solution for that. &lt;/p&gt;&lt;h2&gt;&lt;a href="#retrieving-a-key-from-the-right-instance" class="anchor" name="retrieving-a-key-from-the-right-instance"&gt;&lt;/a&gt;Retrieving a key from the right instance&lt;/h2&gt;
+&lt;p&gt;When you have multiple instances running and you want to use interactive queries, you have to set this property at the binder level:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;spring.cloud.stream.kafka.streams.binder.configuration.application.server: &amp;lt;server&amp;gt;:&amp;lt;port&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, in the controller method, you have to write logic that is similar to the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@RequestMapping(&amp;quot;/charts/top-five&amp;quot;)&#xD;
+@SuppressWarnings(&amp;quot;unchecked&amp;quot;)&#xD;
+public List&amp;lt;SongPlayCountBean&amp;gt; topFive(@RequestParam(value=&amp;quot;genre&amp;quot;) String genre) {&#xD;
+{&#xD;
+&#xD;
+org.apache.kafka.streams.state.HostInfo hostInfo = interactiveQueryService.getHostInfo(&amp;quot;store-name&amp;quot;,&#xD;
+                                                key, keySerializer);&#xD;
+&#xD;
+if (interactiveQueryService.getCurrentHostInfo().equals(hostInfo)) {&#xD;
+&#xD;
+    //query from the store that is locally available&#xD;
+}&#xD;
+else {&#xD;
+    //query from the remote host&#xD;
+RestTemplate restTemplate = new RestTemplate();&#xD;
+	return restTemplate.postForObject(&#xD;
+						String.format(&amp;quot;http://%s:%d/%s&amp;quot;, hostInfo.host(),&#xD;
+								hostInfo.port(), &amp;quot;charts/top-five?genre=Punk&amp;quot;), …);&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#summary" class="anchor" name="summary"&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this blog, we saw the various ways in which Kafka Streams lets you materialize state information into state stores. The binder lets you consume data as &lt;code&gt;KTable&lt;/code&gt; or &lt;code&gt;GlobalKTable&lt;/code&gt; while allowing you to materialize that into a named state store. Kafka Streams has several operations in which state stores can be materialized as named stores. We saw that, when using the processor API in Kafka Streams, the application needs to create state store builder beans that the binder detects which it then passes along to Kafka Streams. Finally, we saw how these state stores can be queried by using interactive queries. We also saw the nuances involving multiple instances of an application and interactive queries against them. &lt;/p&gt;&lt;h2&gt;&lt;a href="#concluding-the-series-and-where-to-go-next-hellip" class="anchor" name="concluding-the-series-and-where-to-go-next-hellip"&gt;&lt;/a&gt;Concluding the series and Where to Go Next&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;Thank you for reading this blog series!&lt;/p&gt;
+&lt;p&gt;In this six-part series, we saw many features of Kafka Streams binder in Spring Cloud Stream, such as its &lt;a href="https://spring.io/blog/2019/12/03/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-2-programming-model-continued"&gt;programming models&lt;/a&gt;, &lt;a href="https://spring.io/blog/2019/12/04/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-3-data-deserialization-and-serialization"&gt;data serialization&lt;/a&gt;, &lt;a href="https://spring.io/blog/2019/12/05/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-4-error-handling"&gt;error handling&lt;/a&gt;, &lt;a href="https://spring.io/blog/2019/12/06/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-5-application-customizations"&gt;customization&lt;/a&gt;, and interactively querying the state stores. There are more features that we haven’t covered as part of this series as we wanted to focus on the general theme of introducing the main features of this binder that was added or enhanced in version &lt;code&gt;3.0.0&lt;/code&gt;. For those additional features or to engage with the engineering team behind Spring Cloud Stream, please check out the various links provided in the resources section below.&lt;/p&gt;&lt;h2&gt;&lt;a href="#resources" class="anchor" name="resources"&gt;&lt;/a&gt;Resources:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://cloud.spring.io/spring-cloud-static/spring-cloud-stream-binder-kafka/3.0.0.RELEASE/reference/html/spring-cloud-stream-binder-kafka.html#_kafka_streams_binder"&gt;Kafka Streams Binder Docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-cloud-stream"&gt;Spring Cloud Stream&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-stream"&gt;Core Spring Cloud Stream GitHub&lt;/a&gt;&lt;br/&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-stream-binder-kafka"&gt;Spring Cloud Stream Kafka Binder GitHub&lt;/a&gt;&lt;br/&gt;&lt;a href="https://github.com/spring-cloud/spring-cloud-stream-samples"&gt;Spring Cloud Stream Samples&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/tagged/spring-cloud-stream"&gt;Stack Overflow&lt;/a&gt;&lt;br/&gt;&lt;a href="https://gitter.im/spring-cloud/spring-cloud-stream"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 5 - Application Customizations</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/06/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-5-application-customizations" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Soby Chacko</name>
+    </author>
+    <id>tag:spring.io,2019-12-06:3903</id>
+    <updated>2019-12-06T16:58:00Z</updated>
+    <content type="html">&lt;p&gt;Part 1 - &lt;a href="https://spring.io/blog/2019/12/02/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-1-programming-model"&gt;Programming Model&lt;/a&gt;&lt;br/&gt;Part 2 - &lt;a href="https://spring.io/blog/2019/12/03/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-2-programming-model-continued"&gt;Programming Model Continued&lt;/a&gt;&lt;br/&gt;Part 3 - &lt;a href="https://spring.io/blog/2019/12/04/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-3-data-deserialization-and-serialization"&gt;Data deserialization and serialization&lt;/a&gt;&lt;br/&gt;Part 4 - &lt;a href="https://spring.io/blog/2019/12/05/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-4-error-handling"&gt;Error Handling&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this blog post, we continue our discussion on the support for Kafka Streams in Spring Cloud Stream. We are going to elaborate on the ways in which you can customize a Kafka Streams application. &lt;/p&gt;&lt;h2&gt;&lt;a href="#customizing-the-streamsbuilderfactorybean" class="anchor" name="customizing-the-streamsbuilderfactorybean"&gt;&lt;/a&gt;Customizing the StreamsBuilderFactoryBean&lt;/h2&gt;
+&lt;p&gt;Kafka Streams binder uses the &lt;a href="https://docs.spring.io/spring-kafka/docs/current/api/org/springframework/kafka/config/StreamsBuilderFactoryBean.html"&gt;StreamsBuilderFactoryBean&lt;/a&gt;, provided by the &lt;a href="https://spring.io/projects/spring-kafka"&gt;Spring for Apache Kafka&lt;/a&gt; project, to build the &lt;a href="https://kafka.apache.org/23/javadoc/org/apache/kafka/streams/StreamsBuilder.html"&gt;StreamsBuilder&lt;/a&gt; object that is the foundation for a Kafka Streams application. This factory bean is a Spring lifecycle bean. Oftentimes, this factory bean must be customized before it is started, for various reasons. As described in the &lt;a href="https://spring.io/blog/2019/12/05/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-4-error-handling"&gt;previous blog&lt;/a&gt; post on error handling, you need to customize the &lt;code&gt;StreamsBuilderFactoryBean&lt;/code&gt; if you want to register a production exception handler. Let’s say that you have this producer exception handler:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;class IgnoreRecordTooLargeHandler implements ProductionExceptionHandler {&#xD;
+    &#xD;
+    public ProductionExceptionHandlerResponse handle(final ProducerRecord&amp;lt;byte[], byte[]&amp;gt; record,&#xD;
+                                                     final Exception exception) {&#xD;
+        if (exception instanceof RecordTooLargeException) {&#xD;
+            return ProductionExceptionHandlerResponse.CONTINUE;&#xD;
+        } else {&#xD;
+            return ProductionExceptionHandlerResponse.FAIL;&#xD;
+        }&#xD;
+    }&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can register it directly by using configuration if you choose (using &lt;code&gt;default.production.exception.handler&lt;/code&gt;). &lt;/p&gt;
+&lt;p&gt;However, a more elegant approach, when using the binder, is to register this as part of the &lt;code&gt;StreamsBuilderFactoryBean&lt;/code&gt; customizer, as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public StreamsBuilderFactoryBeanCustomizer customizer() {&#xD;
+    return fb -&amp;gt; {&#xD;
+        fb.getStreamsConfiguration().put(StreamsConfig.DEFAULT_PRODUCTION_EXCEPTION_HANDLER_CLASS_CONFIG,&#xD;
+                            IgnoreRecordTooLargeHandler.class);&#xD;
+    };&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that, if you have multiple processors in the application, you can control which processor gets customization based on the application ID. For example, you can check on it this way:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;return factoryBean -&amp;gt; {&#xD;
+        if (factoryBean.getStreamsConfiguration().getProperty(StreamsConfig.APPLICATION_ID_CONFIG)&#xD;
+                .equals(&amp;quot;processor1-application-id&amp;quot;)) {
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is another example of setting a state listener:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public StreamsBuilderFactoryBeanCustomizer streamsBuilderFactoryBeanCustomizer() {&#xD;
+    return sfb -&amp;gt; sfb.setStateListener((newState, oldState) -&amp;gt; {&#xD;
+         //Do some action here!&#xD;
+    });&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#customizing-kafkastreams-object" class="anchor" name="customizing-kafkastreams-object"&gt;&lt;/a&gt;Customizing KafkaStreams Object.&lt;/h2&gt;
+&lt;p&gt;The &lt;a href="https://kafka.apache.org/23/javadoc/org/apache/kafka/streams/KafkaStreams.html"&gt;KafkaStreams&lt;/a&gt; object is at the heart of any Kafka Streams application. &lt;code&gt;StreamsBuilderFactoryBean&lt;/code&gt; is responsible for creating the topology and then creating the &lt;code&gt;KafkaStreams&lt;/code&gt; object. Before starting the &lt;code&gt;KafkaStreams&lt;/code&gt; object, StreamsBuilderFactoryBean gives an opportunity to customize this &lt;code&gt;KafkaStreams&lt;/code&gt; object. For example, if you want to set an application-wide handler for uncaught exceptions you can do the following:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public StreamsBuilderFactoryBeanCustomizer streamsBuilderFactoryBeanCustomizer() {&#xD;
+    return factoryBean -&amp;gt; {&#xD;
+        factoryBean.setKafkaStreamsCustomizer(new KafkaStreamsCustomizer() {&#xD;
+            @Override&#xD;
+            public void customize(KafkaStreams kafkaStreams) {&#xD;
+                kafkaStreams.setUncaughtExceptionHandler((t, e) -&amp;gt; {&#xD;
+&#xD;
+                });&#xD;
+            }&#xD;
+        });&#xD;
+    };&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice that we start with the customizer for StreamsBuilderFactoryBean. However, inside it, we use a separate &lt;code&gt;KafkaStreamsCustomizer&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#summary" class="anchor" name="summary"&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this blog post, we saw how the Kafka Streams binder in Spring Cloud Stream lets you customize the underlying &lt;code&gt;StreamsBuilderFactoryBean&lt;/code&gt; and the &lt;code&gt;KafkaStreams&lt;/code&gt; object. &lt;/p&gt;
+&lt;p&gt;Thank you for reading this far! Next, in the final blog post in this series, we will look at how the binder lets you deal with state stores and enabling interactive queries against them. &lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Data R2DBC goes GA</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/06/spring-data-r2dbc-goes-ga" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mark Paluch</name>
+    </author>
+    <id>tag:spring.io,2019-12-06:3902</id>
+    <updated>2019-12-06T13:06:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone that contributed, I am delighted to announce that Spring Data R2DBC 1.0 is generally available from &lt;a href="https://repo.spring.io/"&gt;repo.spring.io&lt;/a&gt; as well as Maven Central! &lt;/p&gt;
+&lt;p&gt;Spring Data R2DBC 1.0 is a non-blocking database client library for the &lt;a href="https://r2dbc.io/2019/12/02/r2dbc-0-8-0-goes-ga"&gt;just released R2DBC specification&lt;/a&gt; that lets you build reactive applications that use SQL databases. The most notable features of Spring Data R2DBC are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Functional-reactive declaration of data access&lt;/li&gt;
+  &lt;li&gt;Fluent API&lt;/li&gt;
+  &lt;li&gt;Support for Transactions&lt;/li&gt;
+  &lt;li&gt;Named parameter support (Dialect-aware)&lt;/li&gt;
+  &lt;li&gt;Repositories&lt;/li&gt;
+  &lt;li&gt;Kotlin Coroutines extensions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Spring Data R2DBC 1.0 requires JDK 8 or higher and &lt;a href="https://r2dbc.io/drivers/"&gt;any R2DBC driver&lt;/a&gt;. Head over to &lt;a href="https://start.spring.io"&gt;start.spring.io&lt;/a&gt; and add R2DBC to configure your dependencies or, if you&amp;rsquo;re already using the Spring Boot R2DBC starter, upgrade your &lt;code&gt;spring-boot-bom-r2dbc&lt;/code&gt; to &lt;code&gt;0.1.0.M3&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Check out our byte-sized Getting Started Guide that explains &lt;a href="https://spring.io/guides/gs/accessing-data-r2dbc/"&gt;how to access data with R2DBC&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To round things off, here are links to the changelog, GitHub repository, and docs:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Project Repository: &lt;a href="https://github.com/spring-projects/spring-data-r2dbc"&gt;github.com/spring-projects/spring-data-r2dbc&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Issue Tracker: &lt;a href="https://github.com/spring-projects/spring-data-r2dbc/issues"&gt;github.com/spring-projects/spring-data-r2dbc/issues&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://repo1.maven.org/maven2/org/springframework/data/spring-data-r2dbc/1.0.0.RELEASE/"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.RELEASE/reference/html/"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/r2dbc/docs/1.0.0.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot 2.2.2 is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/06/spring-boot-2-2-2-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Brian Clozel</name>
+    </author>
+    <id>tag:spring.io,2019-12-06:3901</id>
+    <updated>2019-12-06T10:50:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot 2.2.2 has been released and is now available from &lt;a href="https://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and Maven Central.&lt;/p&gt;
+&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.2.2.RELEASE"&gt;88 fixes, improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.2.2.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Boot 2.1.11 is now available</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/06/spring-boot-2-1-11-is-now-available" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Madhura Bhave</name>
+    </author>
+    <id>tag:spring.io,2019-12-05:3899</id>
+    <updated>2019-12-06T03:22:00Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot 2.1.11 has been released and is now available from &lt;a href="https://repo.spring.io/release"&gt;repo.spring.io&lt;/a&gt; and Maven Central.&lt;/p&gt;
+&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.1.11.RELEASE"&gt;53 fixes, improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="http://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="http://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-boot/docs/2.1.11.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>A Bootiful Podcast: Pivotal's Katrina Bakas about the Pivotal HealthWatch product, Kubernetes, Cloud Foundry and so much more.</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/05/a-bootiful-podcast-pivotal-s-katrina-bakas-about-the-pivotal-healthwatch-product-kubernetes-cloud-foundry-and-so-much-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2019-12-05:3900</id>
+    <updated>2019-12-05T23:32:08Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! This week Josh Long (&lt;a href="http://twitter.com/starbuxman"&gt;@starbuxman&lt;/a&gt;) talks to Pivotal&amp;rsquo;s Katrina Bakas about the Pivotal HealthWatch product, Kubernetes, Cloud Foundry and so much more.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://medium.com/@kvbakas"&gt;Katrina&amp;rsquo;s Medium blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/723382387&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 4 - Error Handling</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/05/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-4-error-handling" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Soby Chacko</name>
+    </author>
+    <id>tag:spring.io,2019-12-05:3897</id>
+    <updated>2019-12-05T15:44:35Z</updated>
+    <content type="html">&lt;p&gt;Part 1 - &lt;a href="https://spring.io/blog/2019/12/02/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-1-programming-model"&gt;Programming Model&lt;/a&gt;&lt;br/&gt;Part 2 - &lt;a href="https://spring.io/blog/2019/12/03/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-2-programming-model-continued"&gt;Programming Model Continued&lt;/a&gt;&lt;br/&gt;Part 3 - &lt;a href="https://spring.io/blog/2019/12/04/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-3-data-deserialization-and-serialization"&gt;Data deserialization and serialization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Continuing with the series on looking at the Spring Cloud Stream binder for Kafka Streams, in this blog post, we are looking at the various error-handling strategies that are available in the Kafka Streams binder.&lt;/p&gt;
+&lt;p&gt;The error handling in Kafka Streams is largely centered around errors that occur during deserialization on the inbound and during production on the outbound. &lt;/p&gt;&lt;h2&gt;&lt;a href="#handling-deserialization-exceptions" class="anchor" name="handling-deserialization-exceptions"&gt;&lt;/a&gt;Handling Deserialization Exceptions&lt;/h2&gt;
+&lt;p&gt;Kafka Streams lets you register deserialization exception handlers. The default behavior is that, when you have a deserialization exception, it logs that error and fails the application (&lt;code&gt;LogAndFailExceptionHandler&lt;/code&gt;). It also lets you log and skip the record and continue the application (&lt;code&gt;LogAndContinueExceptionHandler&lt;/code&gt;). Normally, you provide the corresponding classes as part of the configuration. By using the binder, you can set these exception handlers either at the binder level, which will be applicable for the entire application or at the binding level, which gives you more fine-grained control.&lt;/p&gt;
+&lt;p&gt;Here’s how you can set the deserialization exception handlers at the binder level:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;spring.cloud.stream.kafka.streams.binder.deserializationExceptionHandler=logAndContinue
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you have only a single processor with a single input, it is an easy way to set the deserialization exception handler on the binder as shown above. If you have multiple processors or inputs and if you want to control error handling on them separately, that needs to be set per input binding. Here is an example of doing so:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;spring.cloud.stream.kafka.streams.bindings.process-in-0.consumer.deserializationExceptionHandler=logAndContinue
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Notice that the handler is actually set on the input binding &lt;code&gt;process-in-0&lt;/code&gt;. If you have more such input bindings, then that has to be explicitly set.&lt;/p&gt;&lt;h2&gt;&lt;a href="#kafka-streams-and-the-dlq-dead-letter-queue" class="anchor" name="kafka-streams-and-the-dlq-dead-letter-queue"&gt;&lt;/a&gt;Kafka Streams and the DLQ (Dead Letter Queue)&lt;/h2&gt;
+&lt;p&gt;In addition to the two exception handlers that Kafka Streams provides, the binder provides a third option: a custom handler that lets you send the record in a deserialization error to a special DLQ. In order to activate this, you have to opt-in for this either at the binder or binding level, as explained above. &lt;/p&gt;
+&lt;p&gt;Here’s how to do so:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;spring.cloud.stream.kafka.streams.binder.deserializationExceptionHandler=sendToDlq
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Keep in mind that, when using this setting at the binder, this activates the DLQ at the global level, and this will be applied against all the input topics through their bindings. If that&amp;rsquo;s not what you want to happen, you have to enable it per input binding. &lt;/p&gt;
+&lt;p&gt;By default, the DLQ name is named &lt;code&gt;error.&amp;lt;input-topic-name&amp;gt;.&amp;lt;application-id for kafka streams&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can replace &lt;code&gt;&amp;lt;input-topic-name&amp;gt;&lt;/code&gt; with the actual topic name. Note that this is &lt;strong&gt;not&lt;/strong&gt; the binding name but the actual topic name. &lt;/p&gt;
+&lt;p&gt;If the input topic is topic-1 and the Kafka Streams application ID is my-application, the default DLQ name will be &lt;code&gt;error.topic-1.my-application&lt;/code&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a href="#changing-the-default-dlq-name-generated-by-the-binder" class="anchor" name="changing-the-default-dlq-name-generated-by-the-binder"&gt;&lt;/a&gt;Changing the default DLQ name generated by the binder:&lt;/h2&gt;
+&lt;p&gt;You can reset the default DLQ name, as follows:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;spring.cloud.stream.bindings.process-in-0.consumer.dlqName=input-1-dlq&lt;/code&gt; (Replace &lt;code&gt;process-in-0&lt;/code&gt; with the actual binding name)&lt;/p&gt;
+&lt;p&gt;If it has the required permissions on the broker, the binder provisioner will create all the necessary DLQ topics. If that&amp;rsquo;s not the case, these topics have to be created manually before the application starts.&lt;/p&gt;&lt;h2&gt;&lt;a href="#dlq-topic-and-partitions" class="anchor" name="dlq-topic-and-partitions"&gt;&lt;/a&gt;DLQ Topic and Partitions&lt;/h2&gt;
+&lt;p&gt;By default, the binder assumes that the DLQ topic is provisioned with the same number of partitions as the input topic. If that’s not true (that is if the DLQ topic is provisioned with a different number of partitions), you have to tell the binder the partition to which to send the records by using a &lt;a href="https://github.com/spring-cloud/spring-cloud-stream-binder-kafka/blob/master/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/utils/DlqPartitionFunction.java"&gt;DlqPartitionFunction&lt;/a&gt; implementation, as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public DlqPartitionFunction partitionFunction() {&#xD;
+    return (group, record, ex) -&amp;gt; 0;&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There can only be one such bean present in the application. Therefore, you have to filter out the records by using a group (which is the same as the application ID when using the binder) in the event of multiple processors or inputs with separate DLQ topics.&lt;/p&gt;&lt;h2&gt;&lt;a href="#handling-producer-errors" class="anchor" name="handling-producer-errors"&gt;&lt;/a&gt;Handling producer errors&lt;/h2&gt;
+&lt;p&gt;All the exception handlers that we discussed so far deal only with errors surrounding deserialization of data. Kafka Streams also provides an ability to handle producer errors on the outbound. As of the 3.0. Release, the binder does not provide a first-class mechanism to support this. However, this doesn’t mean that you can’t use the producer exception handlers. You can use the various customizers that the binder relies on from &lt;a href="https://spring.io/projects/spring-kafka"&gt;Spring for Apache Kafka project&lt;/a&gt; to do that. These customizers are going to be the topic of our next blog post in this series.&lt;/p&gt;&lt;h2&gt;&lt;a href="#kafka-streams-binder-health-indicator-and-metrics" class="anchor" name="kafka-streams-binder-health-indicator-and-metrics"&gt;&lt;/a&gt;Kafka Streams Binder Health Indicator and Metrics&lt;/h2&gt;
+&lt;p&gt;Kafka Streams binder allows the monitoring of the health of the underlying streams thread and it exposes the health-indicator metrics through a Spring Boot actuator endpoint. You can find more details &lt;a href="https://cloud.spring.io/spring-cloud-static/spring-cloud-stream-binder-kafka/3.0.0.RELEASE/reference/html/spring-cloud-stream-binder-kafka.html#_health_indicator"&gt;here&lt;/a&gt;. In addition to the health indicator, the binder also exposes Kafka Streams metrics through Micrometer meter-registry. All the basic metrics available through the KafkaStreams object is available in this registry. &lt;a href="https://cloud.spring.io/spring-cloud-static/spring-cloud-stream-binder-kafka/3.0.0.RELEASE/reference/html/spring-cloud-stream-binder-kafka.html#_accessing_kafka_streams_metrics"&gt;Here&lt;/a&gt; is where you can find more information on this. &lt;/p&gt;&lt;h2&gt;&lt;a href="#summary" class="anchor" name="summary"&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this blog post, we saw the various strategies Kafka Streams uses to enable handling deserialization exceptions. On top of these, the Kafka Streams binder also provides a handler that lets you send error-prone payloads to a DLQ topic. We saw that the binder provides fine-grained control of working with these DLQ topics. &lt;/p&gt;
+&lt;p&gt;Thank you for reading this far! In the next blog post, we are going to see how the binder enables further customizations.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Batch 4.0.4, 4.1.3 and 4.2.1 available now!</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/04/spring-batch-4-0-4-4-1-3-and-4-2-1-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Mahmoud Ben Hassine</name>
+    </author>
+    <id>tag:spring.io,2019-12-05:3898</id>
+    <updated>2019-12-04T22:27:00Z</updated>
+    <content type="html">&lt;p&gt;I am pleased to announce the release of Spring Batch 4.0.4, 4.1.3 and 4.2.1 with bug fixes as well as documentation and dependencies updates. Please find the complete list of changes in the release notes: &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10090&amp;version=17484"&gt;4.0.4&lt;/a&gt;, &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10090&amp;version=17485"&gt;4.1.3&lt;/a&gt;, &lt;a href="https://jira.spring.io/secure/ReleaseNote.jspa?projectId=10090&amp;version=17741"&gt;4.2.1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As we &lt;a href="https://spring.io/blog/2019/10/02/spring-batch-4-2-in-now-ga#what-rsquo-s-next"&gt;announced&lt;/a&gt; earlier this year, version 4.0.4 is the last release of the 4.0 line. The 4.1.x line will get another bug fix release next year and 4.1.4 will be the last release for this line. Please upgrade to v4.2+ at your earliest convenience as this is the primary active branch for the moment and which will be supported until the end of 2020.&lt;/p&gt;
+&lt;p&gt;The next feature release will be 4.3, with a GA planned for October 2020, aligned with Spring Framework 5.3 and Spring Boot 2.4. This release is expected to be the last feature branch of Spring Batch 4.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://spring.io/projects/spring-batch"&gt;Spring Batch Home&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-batch"&gt;Source on GitHub&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-batch/4.2.x/reference/html/index.html"&gt;Reference Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 3 - Data deserialization and serialization</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/04/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-3-data-deserialization-and-serialization" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Soby Chacko</name>
+    </author>
+    <id>tag:spring.io,2019-12-04:3896</id>
+    <updated>2019-12-04T16:45:21Z</updated>
+    <content type="html">&lt;p&gt;Part 1 - &lt;a href="https://spring.io/blog/2019/12/02/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-1-programming-model"&gt;Programming Model&lt;/a&gt;&lt;br/&gt;Part 2 - &lt;a href="https://spring.io/blog/2019/12/03/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-2-programming-model-continued"&gt;Programming Model Continued&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Continuing on the previous two blog posts, in this series on writing stream processing applications with Spring Cloud Stream and Kafka Streams, now we will look at the details of how these applications handle deserialization on the inbound and serialization on the outbound. &lt;/p&gt;
+&lt;p&gt;All three major higher-level types in Kafka Streams - &lt;code&gt;KStream&amp;lt;K,V&amp;gt;&lt;/code&gt;, &lt;code&gt;KTable&amp;lt;K,V&amp;gt;&lt;/code&gt; and &lt;code&gt;GlobalKTable&amp;lt;K,V&amp;gt;&lt;/code&gt; - work with a key and a value. &lt;/p&gt;
+&lt;p&gt;With Spring Cloud Stream Kafka Streams support, keys are always deserialized and serialized by using the native &lt;code&gt;Serde&lt;/code&gt; mechanism. A &lt;code&gt;Serde&lt;/code&gt; is a container object where it provides a deserializer and a serializer. &lt;/p&gt;
+&lt;p&gt;Values, on the other hand, are marshaled by using either &lt;code&gt;Serde&lt;/code&gt; or the binder-provided message conversion. Starting with version 3.0 of the binder, using &lt;code&gt;Serde&lt;/code&gt; is the default approach. Using the message converters in Spring is an optional feature that you only need to use on special occasions.&lt;/p&gt;
+&lt;p&gt;Let’s look at this processor:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public BiFunction&amp;lt;KStream&amp;lt;String, Long&amp;gt;, KTable&amp;lt;String, String&amp;gt;, KStream&amp;lt;String, Long&amp;gt;&amp;gt; process() {&#xD;
+  return (userClicksStream, userRegionsTable) -&amp;gt; (userClicksStream&#xD;
+        .leftJoin(userRegionsTable, (clicks, region) -&amp;gt; new RegionWithClicks(region == null ?&#xD;
+                    &amp;quot;UNKNOWN&amp;quot; : region, clicks),&#xD;
+              Joined.with(Serdes.String(), Serdes.Long(), null))&#xD;
+        .map((user, regionWithClicks) -&amp;gt; new KeyValue&amp;lt;&amp;gt;(regionWithClicks.getRegion(),&#xD;
+              regionWithClicks.getClicks()))&#xD;
+        .groupByKey(Grouped.with(Serdes.String(), Serdes.Long()))&#xD;
+        .reduce(Long::sum)&#xD;
+        .toStream());&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is the same processor we saw in the &lt;a href="https://spring.io/blog/2019/12/03/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-2-programming-model-continued"&gt;previous blog&lt;/a&gt;. It has two inputs and an output. The first input binding is a &lt;code&gt;KStream&amp;lt;String, Long&amp;gt;&lt;/code&gt;. The key is of type &lt;code&gt;String&lt;/code&gt; and the value is a &lt;code&gt;Long&lt;/code&gt;. The next input binding is a &lt;code&gt;KTable&amp;lt;String, String&amp;gt;&lt;/code&gt;. Here, both key and value are of type &lt;code&gt;String.&lt;/code&gt; Finally, the output binding is a &lt;code&gt;KStream&amp;lt;String, Long&amp;gt;&lt;/code&gt; with the key as a &lt;code&gt;String&lt;/code&gt; and the value as a &lt;code&gt;Long&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt;Normally, you have to tell the application the right &lt;code&gt;Serde&lt;/code&gt; to use as part of the application’s configuration. However, when using the Kafka Streams binder, for most standard types, this information is inferred and you don’t need to provide any special configuration.&lt;/p&gt;
+&lt;p&gt;The types that are inferred by the binder are those for which Kafka Streams provides out of the box &lt;code&gt;Serde&lt;/code&gt; implementations. These are those types:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Integer&lt;/li&gt;
+  &lt;li&gt;Long&lt;/li&gt;
+  &lt;li&gt;Short&lt;/li&gt;
+  &lt;li&gt;Double&lt;/li&gt;
+  &lt;li&gt;Float&lt;/li&gt;
+  &lt;li&gt;Byte[]&lt;/li&gt;
+  &lt;li&gt;UUID&lt;/li&gt;
+  &lt;li&gt;String&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In other words, if your &lt;code&gt;KStream&lt;/code&gt;, &lt;code&gt;KTable&lt;/code&gt;, or &lt;code&gt;GlobalKTable&lt;/code&gt; have these as the types for the key and the value, you don’t need to provide any special &lt;code&gt;Serde&lt;/code&gt; configuration.&lt;/p&gt;&lt;h2&gt;&lt;a href="#providing-serde-objects-as-spring-beans" class="anchor" name="providing-serde-objects-as-spring-beans"&gt;&lt;/a&gt;Providing Serde objects as Spring Beans&lt;/h2&gt;
+&lt;p&gt;If the types are not from one of these, you can provide a bean of type &lt;code&gt;Serde&amp;lt;T&amp;gt;&lt;/code&gt;, and, if the generic type &lt;code&gt;T&lt;/code&gt; matches with the actual type, the binder will delegate that as the &lt;code&gt;Serde&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For example, let&amp;rsquo;s say you have the following function signature:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+publicFunction&amp;lt;KStream&amp;lt;CustomKey, AvroIn&amp;gt;, KStream&amp;lt;CustomKey, AvroOut&amp;gt;&amp;gt; process() {&#xD;
+&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then, the key and value types don’t match with any of the known &lt;code&gt;Serde&lt;/code&gt; implementations. In that case, you have two options. The recommended approach is to provide a &lt;code&gt;Serde&lt;/code&gt; bean, as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public Serde&amp;lt;CustomKey&amp;gt; customKeySerde(){ &#xD;
+  	return new CustomKeySerde();&#xD;
+}&#xD;
+&#xD;
+@Bean&#xD;
+public Serde&amp;lt;AvroIn&amp;gt; avroInSerde(){ &#xD;
+  	final SpecificAvroSerde&amp;lt;AvroIn&amp;gt; avroInSerde = new SpecificAvroSerde&amp;lt;&amp;gt;();&#xD;
+avroInSerde.configure(...);&#xD;
+return avroInSerde;&#xD;
+&#xD;
+}&#xD;
+&#xD;
+@Bean&#xD;
+public Serde&amp;lt;AvroOut&amp;gt; avroInSerde(){ &#xD;
+ 	final SpecificAvroSerde&amp;lt;AvroOut&amp;gt; avroOutSerde = new SpecificAvroSerde&amp;lt;&amp;gt;();&#xD;
+avroOutSerde.configure(...);&#xD;
+return avroOutSerde;&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#provide-serde-through-configuration" class="anchor" name="provide-serde-through-configuration"&gt;&lt;/a&gt;Provide Serde through Configuration&lt;/h2&gt;
+&lt;p&gt;If you don’t want to provide &lt;code&gt;Serde&lt;/code&gt; as programmatically created Spring beans, you can also define these by using configuration, where you pass the fully qualified name of the &lt;code&gt;Serde&lt;/code&gt; implementation class, as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;spring.cloud.stream.kafka.streams.bindings.process-in-0.consumer.keySerde=CustomKeySerde&#xD;
+spring.cloud.stream.kafka.streams.bindings.process-in-0.consumer.valueSerde=io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde&#xD;
+&#xD;
+spring.cloud.stream.kafka.streams.bindings.process-out-0.producer.keySerde=CustomKeySerde&#xD;
+spring.cloud.stream.kafka.streams.bindings.process-out-0.producer.valueSerde=io.confluent.kafka.streams.serdes.avro.SpecificAvroSerde
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By the way, setting Serde like this will have higher precedence even if you have matching beans since these configurations are set on the actual consumer and producer bindings. The binder gives it precedence since the user explicitly requested it. &lt;/p&gt;&lt;h2&gt;&lt;a href="#default-serde-and-falling-back-to-jsonserde" class="anchor" name="default-serde-and-falling-back-to-jsonserde"&gt;&lt;/a&gt;Default Serde and falling back to JsonSerde&lt;/h2&gt;
+&lt;p&gt;At this point, if the binder still cannot match any &lt;code&gt;Serde&lt;/code&gt;, it looks for a default one to match.&lt;/p&gt;
+&lt;p&gt;If all approaches fail to match one, the binder will fall back to the &lt;a href="https://docs.spring.io/spring-kafka/api/org/springframework/kafka/support/serializer/JsonSerde.html"&gt;JsonSerde&lt;/a&gt; implementation provided by Spring for Apache Kafka project. If you don’t use any of the above mechanisms and let the binder fall back to &lt;code&gt;JsonSerde&lt;/code&gt;, you have to make sure that the classes are JSON-friendly.&lt;/p&gt;&lt;h2&gt;&lt;a href="#serde-used-inside-the-actual-business-logic" class="anchor" name="serde-used-inside-the-actual-business-logic"&gt;&lt;/a&gt;Serde used inside the actual business logic&lt;/h2&gt;
+&lt;p&gt;Kafka Streams has several API methods that need access to &lt;code&gt;Serde&lt;/code&gt; objects. For example, look at the method calls &lt;code&gt;joined&lt;/code&gt; or &lt;code&gt;groupBy&lt;/code&gt; from the earlier &lt;code&gt;BiFunction&lt;/code&gt; example processor. This is actually the responsibility of the application developer to provide, as the binder cannot help with any inference in those instances. In other words, the binder support for &lt;code&gt;Serde&lt;/code&gt; inference, matching a &lt;code&gt;Serde&lt;/code&gt; with a provided bean, and so on are applied only on the edges of your application, at either the input or the output bindings. Confusion may arise because, when you use the binder for developing Kafka Streams applications, you might think that the binder will completely hide the complexities of &lt;code&gt;Serde&lt;/code&gt;, which is a false impression. The binder helps you with the &lt;code&gt;Serde&lt;/code&gt; only on consuming and producing. Any &lt;code&gt;Serde&lt;/code&gt; required by your business logic implementation still needs to be provided by the application.&lt;/p&gt;&lt;h2&gt;&lt;a href="#summary" class="anchor" name="summary"&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this blog post, we saw an overview of how the Kafka Streams binder for Spring Cloud Stream helps you with deserialization and serialization of the data. The binder can infer the key and value types used on the input and output bindings. We saw that the default is to always use native &lt;code&gt;Serde&lt;/code&gt; mechanism, but the binder gives you an option to disable this and delegate to Spring’s message converters if need be. We also found out that any &lt;code&gt;Serde&lt;/code&gt; required by your business logic implementation still needs to be provided by the application. &lt;/p&gt;
+&lt;p&gt;In the next blog post, we will look at the various error handling mechanisms that Kafka Streams provides for deserialization and production of messages and how the binder supports them. &lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Data Moore SR3 and Lovelace SR14 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/04/spring-data-moore-sr3-and-lovelace-sr14-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Jens Schauder</name>
+    </author>
+    <id>tag:spring.io,2019-12-04:3895</id>
+    <updated>2019-12-04T14:58:31Z</updated>
+    <content type="html">&lt;p&gt;On behalf of the community, we are pleased to announce that Spring Data &lt;code&gt;Moore SR3&lt;/code&gt; and &lt;code&gt;Lovelace SR14&lt;/code&gt; are now available from Maven Central. Both releases ship with almost 70 tickets in total, mostly bugfixes and dependency upgrades.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Moore SR3&lt;/code&gt; is built on top of the recently released Spring Framework &lt;code&gt;5.2.2&lt;/code&gt; and will be picked up by Spring Boot &lt;code&gt;2.2.2&lt;/code&gt; for easier consumption and &lt;code&gt;Lovelace SR14&lt;/code&gt; is built on top of the recently released Spring Framework &lt;code&gt;5.1.12&lt;/code&gt; and will be picked up by Spring Boot &lt;code&gt;2.1.11&lt;/code&gt; for easier consumption.&lt;/p&gt;
+&lt;p&gt;Here are links to the reference documentation, changelogs, and artifacts of the individual project releases:&lt;/p&gt;&lt;h3&gt;&lt;a href="#moore-sr-3" class="anchor" name="moore-sr-3"&gt;&lt;/a&gt;Moore SR 3&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Data Commons 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data JDBC 1.1.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jdbc/1.1.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/1.1.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/1.1.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/1.1.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data JPA 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Solr 4.1.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/4.1.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/solr/docs/4.1.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/solr/docs/4.1.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/solr/docs/4.1.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Neo4j 5.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/5.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/5.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/5.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/5.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Cassandra 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/2.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data MongoDB 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/2.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data KeyValue 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-keyvalue/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Gemfire 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-gemfire/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/gemfire/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/gemfire/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/gemfire/docs/2.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Geode 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-geode/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data LDAP 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-ldap/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Envers 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-envers/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/envers/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/envers/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data REST 3.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/3.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Redis 2.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/2.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Elasticsearch 3.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/3.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Couchbase 3.2.3 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/3.2.3.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/3.2.3.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/3.2.3.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/3.2.3.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#lovelace-sr14" class="anchor" name="lovelace-sr14"&gt;&lt;/a&gt;Lovelace SR14&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Data Commons 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-commons/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/commons/docs/2.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data JDBC 1.0.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jdbc/1.0.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/1.0.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/1.0.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jdbc/docs/1.0.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data JPA 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-jpa/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/jpa/docs/2.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Solr 4.0.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-solr/4.0.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/solr/docs/4.0.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/solr/docs/4.0.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/solr/docs/4.0.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Neo4j 5.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-neo4j/5.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/5.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/5.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/neo4j/docs/5.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Cassandra 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-cassandra/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/cassandra/docs/2.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data MongoDB 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-mongodb/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/mongodb/docs/2.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data KeyValue 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-keyvalue/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/keyvalue/docs/2.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Gemfire 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-gemfire/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/gemfire/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/gemfire/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/gemfire/docs/2.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data for Apache Geode 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-geode/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/geode/docs/2.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data LDAP 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-ldap/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/ldap/docs/2.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Envers 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-envers/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/envers/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/envers/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data REST 3.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-rest-webmvc/3.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/rest/docs/3.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Redis 2.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-redis/2.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/redis/docs/2.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Elasticsearch 3.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-elasticsearch/3.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/elasticsearch/docs/3.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Data Couchbase 3.1.14 - &lt;a href="https://repo.spring.io/libs-release/org/springframework/data/spring-data-couchbase/3.1.14.RELEASE"&gt;Artifacts&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/3.1.14.RELEASE/api"&gt;Javadoc&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/3.1.14.RELEASE/reference/html"&gt;Documentation&lt;/a&gt; - &lt;a href="https://docs.spring.io/spring-data/couchbase/docs/3.1.14.RELEASE/changelog.txt"&gt;Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Stream Processing with Spring Cloud Stream and Apache Kafka Streams. Part 2 - Programming Model Continued</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/03/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-2-programming-model-continued" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Soby Chacko</name>
+    </author>
+    <id>tag:spring.io,2019-12-02:3892</id>
+    <updated>2019-12-03T16:09:00Z</updated>
+    <content type="html">&lt;p&gt;On the heels of the &lt;a href="https://spring.io/blog/2019/12/02/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-1-programming-model"&gt;previous blog&lt;/a&gt; in which we introduced the basic functional programming model for writing streaming applications with Spring Cloud Stream and Kafka Streams, in this part, we are going to further explore that programming model.&lt;/p&gt;
+&lt;p&gt;Let’s look at a few scenarios.&lt;/p&gt;&lt;h2&gt;&lt;a href="#scenario-1-single-input-and-output-binding" class="anchor" name="scenario-1-single-input-and-output-binding"&gt;&lt;/a&gt;Scenario 1: Single input and output binding&lt;/h2&gt;
+&lt;p&gt;If your application consumes data from a single input binding and produces data into an output binding, you can use Java’s Function interface to do that. Keep in mind that binding in this sense is not necessarily mapped to a single input Kafka topic, because topics could be multiplexed and attached to a single input binding (with comma-separated multiple topics configured on a single binding - see below for an example). On the outbound case, the binding maps to a single topic here. &lt;/p&gt;
+&lt;p&gt;Here is an example processor:&lt;/p&gt;
+&lt;p&gt;Note that the actual business logic implementation is given as a lambda expression in this processor.&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public Function&amp;lt;KStream&amp;lt;Object, String&amp;gt;, KStream&amp;lt;String, WordCount&amp;gt;&amp;gt; wordcount() {&#xD;
+&#xD;
+  return input -&amp;gt; input&#xD;
+        .flatMapValues(value -&amp;gt; Arrays.asList(value.toLowerCase().split(&amp;quot;\\W+&amp;quot;)))&#xD;
+        .map((key, value) -&amp;gt; new KeyValue&amp;lt;&amp;gt;(value, value))&#xD;
+        .groupByKey(Grouped.with(Serdes.String(), Serdes.String()))&#xD;
+        .windowedBy(TimeWindows.of(5000))&#xD;
+        .count(Materialized.as(&amp;quot;wordcount-store&amp;quot;))&#xD;
+        .toStream()&#xD;
+        .map((key, value) -&amp;gt; new KeyValue&amp;lt;&amp;gt;(key.key(), new WordCount(key.key(), value,&#xD;
+              new Date(key.window().start()), new Date(key.window().end()))));&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Look at the return signature of the processor. It is a &lt;code&gt;Function&amp;lt;KStream&amp;lt;Object, String&amp;gt;, KStream&amp;lt;String, WordCount&amp;gt;&amp;gt;&lt;/code&gt;. The processor consumes a &lt;code&gt;KStream&lt;/code&gt; and produces another &lt;code&gt;KStream&lt;/code&gt; Under the hood, the binder uses an incoming Kafka topic to consume data from and then provide that to this input &lt;code&gt;KStream&lt;/code&gt;. Similarly, on the outbound, the binder produces data as a &lt;code&gt;KStream&lt;/code&gt; which will be sent to an outgoing Kafka topic. &lt;/p&gt;
+&lt;p&gt;Here is how you may provide input topics to this processor:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;spring.cloud.stream.bindings.wordcount-in-0.destination=words&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In the case of multiplexed topics, you can use this:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;spring.cloud.stream.bindings.wordcount-in-0.destination=words1,words2,word3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The output topic can be configured as below:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;spring.cloud.stream.bindings.wordcount-out-0.destination=counts&lt;/code&gt;&lt;/p&gt;&lt;h2&gt;&lt;a href="#scenario-2-multiple-output-bindings-through-kafka-streams-branching" class="anchor" name="scenario-2-multiple-output-bindings-through-kafka-streams-branching"&gt;&lt;/a&gt;Scenario 2: Multiple output bindings through Kafka Streams branching&lt;/h2&gt;
+&lt;p&gt;Kafka Streams lets you send to multiple topics on the outbound by using a feature called branching. Essentially, it uses a predicate to match as a basis for branching into multiple topics. This is largely identical to the example above, but the main difference is that the outbound is provided as a KStream[]. &lt;/p&gt;
+&lt;p&gt;Here is an example processor:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;  @Bean&#xD;
+  public Function&amp;lt;KStream&amp;lt;Object, String&amp;gt;, KStream&amp;lt;?, WordCount&amp;gt;[]&amp;gt; wordcount() {&#xD;
+&#xD;
+     Predicate&amp;lt;Object, WordCount&amp;gt; isEnglish = (k, v) -&amp;gt; v.word.equals(&amp;quot;english&amp;quot;);&#xD;
+     Predicate&amp;lt;Object, WordCount&amp;gt; isFrench = (k, v) -&amp;gt; v.word.equals(&amp;quot;french&amp;quot;);&#xD;
+     Predicate&amp;lt;Object, WordCount&amp;gt; isSpanish = (k, v) -&amp;gt; v.word.equals(&amp;quot;spanish&amp;quot;);&#xD;
+&#xD;
+     return input -&amp;gt; input&#xD;
+           .flatMapValues(value -&amp;gt; Arrays.asList(value.toLowerCase().split(&amp;quot;\\W+&amp;quot;)))&#xD;
+           .groupBy((key, value) -&amp;gt; value)&#xD;
+           .windowedBy(TimeWindows.of(5000))&#xD;
+           .count(Materialized.as(&amp;quot;WordCounts-branch&amp;quot;))&#xD;
+           .toStream()&#xD;
+           .map((key, value) -&amp;gt; new KeyValue&amp;lt;&amp;gt;(null, new WordCount(key.key(), value,&#xD;
+                 new Date(key.window().start()), new Date(key.window().end()))))&#xD;
+           .branch(isEnglish, isFrench, isSpanish);&#xD;
+  }&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Pay attention to the second parametric type for the function. It is provided as a KStream[].&lt;/p&gt;
+&lt;p&gt;You can provide the individual output topics for these bindings:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;spring.cloud.stream.bindings.wordcount-out-0.destination=output1&#xD;
+spring.cloud.stream.bindings.wordcount-out-1.destination=output2&#xD;
+spring.cloud.stream.bindings.wordcount-out-2.destination=output3
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#scenario-3-two-input-bindings-and-a-single-output-binding" class="anchor" name="scenario-3-two-input-bindings-and-a-single-output-binding"&gt;&lt;/a&gt;Scenario 3: Two input bindings and a single output binding.&lt;/h2&gt;
+&lt;p&gt;When you have two input bindings and an output binding, you can represent your processor as a bean of type &lt;code&gt;java.util.function.BiFunction&lt;/code&gt;. Here is an example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public BiFunction&amp;lt;KStream&amp;lt;String, Long&amp;gt;, KTable&amp;lt;String, String&amp;gt;, KStream&amp;lt;String, Long&amp;gt;&amp;gt; process() {&#xD;
+  return (userClicksStream, userRegionsTable) -&amp;gt; (userClicksStream&#xD;
+        .leftJoin(userRegionsTable, (clicks, region) -&amp;gt; new RegionWithClicks(region == null ?&#xD;
+                    &amp;quot;UNKNOWN&amp;quot; : region, clicks),&#xD;
+              Joined.with(Serdes.String(), Serdes.Long(), null))&#xD;
+        .map((user, regionWithClicks) -&amp;gt; new KeyValue&amp;lt;&amp;gt;(regionWithClicks.getRegion(),&#xD;
+              regionWithClicks.getClicks()))&#xD;
+        .groupByKey(Grouped.with(Serdes.String(), Serdes.Long()))&#xD;
+        .reduce(Long::sum)&#xD;
+        .toStream());&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;code&gt;BiFunction&lt;/code&gt; has two inputs and an output. The first input is a &lt;code&gt;KStream&lt;/code&gt;, and the second one is a &lt;code&gt;KTable&lt;/code&gt;, whereas the output is another &lt;code&gt;KStream&lt;/code&gt;. If you want to have a multiple &lt;code&gt;KStream&lt;/code&gt; on the outbound, you can change the type signature to &lt;code&gt;KStream[]&lt;/code&gt;and then make the necessary implementation changes.&lt;/p&gt;
+&lt;p&gt;Scenario 4: Two input bindings and no output bindings&lt;/p&gt;
+&lt;p&gt;If you only have two input bindings but no outputs, you can use Java’s &lt;code&gt;BiConsumer&lt;/code&gt; support. Possible use cases are where you don’t want to produce output, but update some state stores. Here is an example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public BiConsumer&amp;lt;KStream&amp;lt;String, Long&amp;gt;, KTable&amp;lt;String, String&amp;gt;&amp;gt; process() {&#xD;
+  return (userClicksStream, userRegionsTable) -&amp;gt; {&#xD;
+     userClicksStream.foreach((key, value) -&amp;gt; latch.countDown());&#xD;
+     userRegionsTable.toStream().foreach((key, value) -&amp;gt; latch.countDown());&#xD;
+  };&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a href="#scenario-5-more-than-two-input-bindings" class="anchor" name="scenario-5-more-than-two-input-bindings"&gt;&lt;/a&gt;Scenario 5: More than two input bindings.&lt;/h2&gt;
+&lt;p&gt;What if you have three or four or n number of input bindings? In that case, you cannot rely on a Function or BiFunction approach. You need to rely on partially applied functions. Basically, you start with a Function, but then, on the outbound of this first function, you provide another Function or Consumer until you exhaust your inputs. This technique of partially applying functions in this way is generally known as function currying in functional programming jargon. Here is an example that uses three inputs and a single output:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;@Bean&#xD;
+public Function&amp;lt;KStream&amp;lt;Long, Order&amp;gt;,&#xD;
+     Function&amp;lt;GlobalKTable&amp;lt;Long, Customer&amp;gt;,&#xD;
+           Function&amp;lt;GlobalKTable&amp;lt;Long, Product&amp;gt;, KStream&amp;lt;Long, EnrichedOrder&amp;gt;&amp;gt;&amp;gt;&amp;gt; process() {&#xD;
+&#xD;
+  return orderStream -&amp;gt; (&#xD;
+        customers -&amp;gt; (&#xD;
+              products -&amp;gt; (&#xD;
+                    orderStream.join(customers,&#xD;
+                          (orderId, order) -&amp;gt; order.getCustomerId(),&#xD;
+                          (order, customer) -&amp;gt; new CustomerOrder(customer, order))&#xD;
+                          .join(products,&#xD;
+                                (orderId, customerOrder) -&amp;gt; customerOrder&#xD;
+                                      .productId(),&#xD;
+                                (customerOrder, product) -&amp;gt; {&#xD;
+                                   EnrichedOrder enrichedOrder = new EnrichedOrder();&#xD;
+                                   enrichedOrder.setProduct(product);&#xD;
+                                   enrichedOrder.setCustomer(customerOrder.customer);&#xD;
+                                   enrichedOrder.setOrder(customerOrder.order);&#xD;
+                                   return enrichedOrder;&#xD;
+                                })&#xD;
+              )&#xD;
+        )&#xD;
+  );&#xD;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Carefully examine the processor’s type signature.:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;Function&amp;lt;KStream&amp;lt;Long, Order&amp;gt;,&#xD;
+     Function&amp;lt;GlobalKTable&amp;lt;Long, Customer&amp;gt;,&#xD;
+           Function&amp;lt;GlobalKTable&amp;lt;Long, Product&amp;gt;, KStream&amp;lt;Long, EnrichedOrder&amp;gt;&amp;gt;&amp;gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We start with a function that takes a &lt;code&gt;KStream&lt;/code&gt; as input, but the second argument (the output of this function) is another &lt;code&gt;Function&lt;/code&gt; that takes a &lt;code&gt;GlobalKTable&lt;/code&gt; as input. This second Function has another function as its output, which has an input of another &lt;code&gt;GlobalKTable&lt;/code&gt;. This third function is exhausting our inputs, and this function has a &lt;code&gt;KStream&lt;/code&gt; as its output, which will be used for the output binding. &lt;/p&gt;
+&lt;p&gt;Let’s look at this model from a mathematical perspective. &lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s call these three functions as &lt;code&gt;f(x)&lt;/code&gt;, &lt;code&gt;f(y)&lt;/code&gt; and &lt;code&gt;f(z)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If we expand these functions, it will look like this: &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;f(x) -&amp;gt; f(y) -&amp;gt; f(z) -&amp;gt;  KStream&amp;lt;Long, EnrichedOrder&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;x&lt;/strong&gt; variable stands for &lt;code&gt;KStream&amp;lt;Long, Order&amp;gt;&lt;/code&gt;, the &lt;strong&gt;y&lt;/strong&gt; variable stands for &lt;code&gt;GlobalKTable&amp;lt;Long, Customer&amp;gt;&lt;/code&gt; and the &lt;strong&gt;z&lt;/strong&gt; variable stands for &lt;code&gt;GlobalKTable&amp;lt;Long, Product&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The first function &lt;code&gt;f(x)&lt;/code&gt; has the first input binding of the application (&lt;code&gt;KStream&amp;lt;Long, Order&amp;gt;&lt;/code&gt;) and its output is the function, &lt;code&gt;f(y)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The function&lt;code&gt;f(y)&lt;/code&gt; has the second input binding for the application (&lt;code&gt;GlobalKTable&amp;lt;Long, Customer&amp;gt;&lt;/code&gt;), and its output is yet another function, &lt;code&gt;f(z)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The input for the function &lt;code&gt;f(z)&lt;/code&gt; is the third input for the application (&lt;code&gt;GlobalKTable&amp;lt;Long, Product&amp;gt;&lt;/code&gt;) and its output is &lt;code&gt;KStream&amp;lt;Long, EnrichedOrder&amp;gt;&lt;/code&gt;, which is the final output binding for the application.&lt;/p&gt;
+&lt;p&gt;The inputs from the three partial functions (&lt;code&gt;KStream&lt;/code&gt;, &lt;code&gt;GlobalKTable&lt;/code&gt;, &lt;code&gt;GlobalKTable&lt;/code&gt;, respectively) are available in the method body for implementing the business logic as part of the lambda expression.&lt;/p&gt;
+&lt;p&gt;Bear in mind that, using function currying in Java as described above for more than a reasonable number of inputs (like three as in the above example) might cause code readability issues. Therefore, you have to carefully evaluate and decompose your application to see the appropriateness of having a larger number of input bindings in a single processor.&lt;/p&gt;&lt;h2&gt;&lt;a href="#summary" class="anchor" name="summary"&gt;&lt;/a&gt;Summary&lt;/h2&gt;
+&lt;p&gt;In this blog post, we took a whirlwind tour of the various functional programming models that you can use in a Spring Cloud Stream-based Kafka Streams applications. We saw the ways in which we can use &lt;code&gt;java.util.function.Function&lt;/code&gt; (or &lt;code&gt;Consumer&lt;/code&gt; as we saw in the &lt;a href="https://spring.io/blog/2019/12/02/stream-processing-with-spring-cloud-stream-and-apache-kafka-streams-part-1-programming-model"&gt;previous blog&lt;/a&gt;), &lt;code&gt;java.util.function.BiFunction&lt;/code&gt;, and &lt;code&gt;BiConsumer.&lt;/code&gt; We also saw how multiple bindings can be supported on the outbound by using Kafka Stream’s branching feature, which provides an array of &lt;code&gt;KStream&lt;/code&gt; as output. Finally, we saw the ways in which more than two input bindings can be supported through partially applied (curried) functions. In the next blog post, we will see how data deserialization and serialization are performed by the Kafka Streams binder. &lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>Spring Framework maintenance roadmap in 2020 (including 4.3 EOL)</title>
+    <link rel="alternate" href="https://spring.io/blog/2019/12/03/spring-framework-maintenance-roadmap-in-2020-including-4-3-eol" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Juergen Hoeller</name>
+    </author>
+    <id>tag:spring.io,2019-12-03:3894</id>
+    <updated>2019-12-03T13:44:11Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring community,&lt;/p&gt;
+&lt;p&gt;With &lt;a href="https://spring.io/blog/2019/12/03/spring-framework-5-2-2-and-5-1-12-available-now"&gt;Spring Framework 5.2.2 and 5.1.12 being available now&lt;/a&gt;, let me take the opportunity to provide an update on the maintenance roadmap in 2020.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Most importantly, Spring Framework 4.3.x and therefore Spring Framework 4 overall will reach its end-of-life next year: Our EOL cut-off is December 31st, 2020, with no further support on 4.3.x beyond that point. At the same time, we are also phasing out 5.0.x and 5.1.x for good.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As for planned releases, first up is a full round in mid January: with 5.2.3 and 5.1.13 accompanied by 5.0.16 and 4.3.26. The latter are the last maintenance releases in the 5.0.x and 4.3.x lines. We may do critical patches in case of vulnerabilities but otherwise no further releases are planned in those lines until the final cut-off at the end of 2020.&lt;/p&gt;
+&lt;p&gt;The 5.1.x line will receive general maintenance throughout 2020 but just with infrequent releases (~ once a quarter). The primary active branch is 5.2.x now, with frequent releases planned (~ once a month), supporting not only the current Spring Boot 2.2 generation but also the upcoming Spring Boot 2.3 (April 2020) for its entire lifetime.&lt;/p&gt;
+&lt;p&gt;Last but not least, the next Spring Framework feature release will be 5.3, with GA planned for October 2020, aligned with Spring Boot 2.4. This is expected to be the last 5.x feature branch, enjoying an extended support life. We intend to wrap up all 5.x themes for 5.3, including our runtime tuning efforts (startup performance, memory consumption).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;TL;DR: By the end of 2020, the only active Spring Framework branches are going to be 5.2.x and the then-new 5.3.x line (which is expected to receive long-term support, effectively superseding 4.3.x from that perspective). Please upgrade to 5.2+ at your earliest convenience.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Cheers,&lt;br/&gt;Juergen&lt;/p&gt;
+&lt;p&gt;P.S.: See the &lt;a href="https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions#supported-versions"&gt;versions page&lt;/a&gt; for support timeframes and the &lt;a href="https://github.com/spring-projects/spring-framework/milestones"&gt;milestones page&lt;/a&gt; for release dates.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+</feed>

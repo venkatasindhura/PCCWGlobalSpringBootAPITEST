@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8084
+ADD target/PCCWGlobalSpringbootRestAPI.jar PCCWGlobalSpringbootRestAPI.jar
+ENTRYPOINT ["java","-jar","/PCCWGlobalSpringbootRestAPI.jar"]
