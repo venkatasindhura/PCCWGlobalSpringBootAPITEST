@@ -41,9 +41,7 @@ public class SendEmailApi{
         //helper.setText("Check attachment for image!");
         // true = text/html
         helper.setText("<h1> You have done registration successfully!</h1>", true);
-		// hard coded a file path
-        //FileSystemResource file = new FileSystemResource(new File("path/android.png"));
-        // helper.addAttachment("my_photo.png", new ClassPathResource("android.png"));
+		
         javaMailSender.send(msg);
     }
 }
