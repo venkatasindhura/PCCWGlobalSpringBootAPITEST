@@ -7,11 +7,11 @@ Technologies Used to implement the Module:
 4, Maven 
 5, Eclipse
 5, Docker to run the spring boot application.
-Let me explain the steps to create the run the application.
-1, I created Spring Boot application using Maven build tool in eclipse.
-2, And then I created packages for model, controller, exceptions, repository and api to write email   service.
-3, I implemented the module based on PCCW Global document. I created sample smtp server for      email service.
-4, I created jar file for the application using Maven Test.
+Please find below steps to create the run the application.
+1, Created Spring Boot application using Maven build tool in eclipse.
+2, And Created packages for model, controller, exceptions, repository and api to write email   service.
+3, Implemented the module based on PCCW Global document. Created sample smtp server for      email service.
+4, Created jar file for the application using Maven Test and 
 5, For that we should give target location to save the Jar file.
 6, Then created one Docker file inside the application named as “Docker.file” . Inside the file, we give configurations to run the application in the Docker such as port , Jar file and entry point to run the Jar.
 Docker. File
@@ -20,7 +20,7 @@ EXPOSE 8084
 ADD target/PCCWGlobalSpringbootRestAPI.jar PCCWGlobalSpringbootRestAPI.jar
 ENTRYPOINT ["java","-jar","/PCCWGlobalSpringbootRestAPI.jar"].
 7, First we need to install Docker based on OS.
-8, We start Docker Engine. Once Started, it shows the Docker is running.
+8, Docker Engine has to be initialized. Once Started, it shows the Docker is running.
 9, Open the docker command prompt and open the spring boot project directory.
 10, Then run the command “docker build -t PCCWGlobalSpringbootRestAPI.jar”.
 11, Click enter then it shows the configurations. The docker image created successfully.
